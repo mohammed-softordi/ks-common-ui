@@ -1,0 +1,16 @@
+{
+  "name": "kse-common-ui",
+  "description": "kse-common-ui",
+  "main": "icon-toggle.js",
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0",
+    "polymer-cli": "^1.7.7",
+    "@polymer/iron-icon": "3.0.0-pre.21",
+    "@polymer/iron-icons": "3.0.0-pre.21",
+    "@webcomponents/webcomponentsjs": "^2.0.0"
+  },
+  "devDependencies": {
+    "@polymer/iron-demo-helpers": "^3.0.0-pre.19",
+    "wct-browser-legacy": "^1.0.0"
+  }
+}
