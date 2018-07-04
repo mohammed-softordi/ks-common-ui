@@ -12,6 +12,7 @@
       import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
       import '@polymer/iron-demo-helpers/demo-snippet';
       import '../icon-toggle.js';
+      import '../ks-search';
     </script>
 
     <custom-style>
@@ -21,6 +22,7 @@
   </head>
   <body>
     <div class="vertical-section-container centered">
+      <h1>KS Common component toolbox</h1>
       <h3>Basic icon-toggle demo</h3>
       <demo-snippet>
         <template>
@@ -28,6 +30,14 @@
           <icon-toggle toggle-icon="favorite" pressed></icon-toggle>
         </template>
       </demo-snippet>
+      <h3>KS search demo</h3>
+      <demo-snippet>
+        <template>
+          <ks-search icon-class="search" reload-on-clear value="Demo"></ks-search>
+        </template>
+      </demo-snippet>
+
+
     </div>
   </body>
 </html>
