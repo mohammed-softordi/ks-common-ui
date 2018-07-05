@@ -1,7 +1,7 @@
-import {html, PolymerElement} from './node_modules/@polymer/polymer/polymer-element';
-import {DomIf as DomIf} from './node_modules/@polymer/polymer/lib/elements/dom-if';
-import './node_modules/polymer3-granite-bootstrap/granite-bootstrap-min';
-import './node_modules/fontawesome-icon/fontawesome-icon';
+import {html, PolymerElement} from './node_modules/@polymer/polymer/polymer-element.js';
+import {DomIf as DomIf} from './node_modules/@polymer/polymer/lib/elements/dom-if.js';
+import './node_modules/polymer3-granite-bootstrap/granite-bootstrap-min.js';
+import './node_modules/fontawesome-icon/fontawesome-icon.js';
 
 /**
  * `ks-search`
