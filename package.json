@@ -9,8 +9,7 @@
     "@webcomponents/webcomponentsjs": "^2.0.0",
     "corporate-ui": "^2.5.0",
     "fontawesome-icon": "^1.0.4",
-    "growl": "^1.10.0",
-    "polymer-cli": "^1.7.7",
+    "growl": "^1.10.5",
     "polymer3-granite-bootstrap": "^4.0.0-polymer3"
   },
   "devDependencies": {
