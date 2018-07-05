@@ -1,6 +1,6 @@
 {
   "name": "kse-common-ui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "kse-common-ui",
   "dependencies": {
     "@polymer/iron-icon": "3.0.0-pre.21",
