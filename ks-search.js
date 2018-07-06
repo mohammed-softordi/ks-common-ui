@@ -47,7 +47,8 @@ class KsSearch extends PolymerElement {
 
                 </span>
         </div>
-        <div style="background-color: gray"> Value received in <span style="font-style: normal">ks-search</span> the custom element : [[value]]</div>`;
+        <div style="background-color: gray"> Value received in <span style="font-style: normal">ks-search</span> the custom element : [[value]]</div>
+        `;
     }
     constructor() {
         super();
