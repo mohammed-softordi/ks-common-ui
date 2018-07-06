@@ -1,6 +1,7 @@
 import {html, PolymerElement} from '@polymer/polymer/polymer-element';
 import {DomIf as DomIf} from '@polymer/polymer/lib/elements/dom-if';
 import 'polymer3-granite-bootstrap/granite-bootstrap-min';
+import 'corporate-ui/css-modules/corporate-ui'
 import 'fontawesome-icon/fontawesome-icon';
 
 /**
@@ -16,6 +17,9 @@ class KsSearch extends PolymerElement {
         return html`
         <custom-style>
             <style is="custom-style" include="granite-bootstrap-min"></style>
+        </custom-style>
+        <custom-style>
+             <style is="custom-style" include="corporate-ui"></style>
         </custom-style>
         <style>
             /* shadow DOM styles go here */
