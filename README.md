@@ -1,6 +1,5 @@
-# \<icon-toggle\>
+# \<kse-common-ui-toolbox\>
 
-icon toggle
 
 ## Install the Polymer-CLI
 
@@ -19,3 +18,7 @@ $ polymer test
 ```
 
 Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.
+
+
+The platform use [granite-bootstrap](https://www.npmjs.com/package/polymer3-granite-bootstrap), a wrapping of Bootstrap CSS as Polymer shared styles modules (i.e. inside <dom-module> tags).
+
