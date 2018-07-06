@@ -34,7 +34,7 @@ class KsSearch extends PolymerElement {
         </style>
         <div class="form-group sc-search">
 
-            <input id="ksSearch" value="[[value]]" class="form-control" type="text" on-focus="toggleIcon" on-input="toggleIcon"/>
+            <input id="ksSearch" value="{{value::input}}" class="form-control" type="text" on-focus="toggleIcon" on-input="toggleIcon"/>
                 <span class="input-icon">
                 <template is="dom-if" if="[[showClearIcon]]">
                     <span on-click="clearInput">
@@ -46,7 +46,8 @@ class KsSearch extends PolymerElement {
                      </template>
 
                 </span>
-        </div>`;
+        </div>
+        <div style="background-color: gray"> Value received in <span style="font-style: normal">ks-search</span> the custom element : [[value]]</div>`;
     }
     constructor() {
         super();
@@ -80,7 +81,7 @@ class KsSearch extends PolymerElement {
         if (this.iconClass === 'fa-search') {
             placeholder = 'Scs_Core.Sök';
         }
-        //this.$.ksSearch.setAttribute('placeholder', placeholder);
+        this.$.ksSearch.setAttribute('placeholder', placeholder);
 
     }
 
