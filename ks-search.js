@@ -27,7 +27,6 @@ class KsSearch extends PolymerElement {
                 display: inline-block;
             }
             .input-group {
-                width: 100%;
                 border: 1px solid #ced4da;
                 border-radius: .25rem;
             }
