@@ -1,7 +1,7 @@
 import {html, PolymerElement} from '@polymer/polymer/polymer-element';
 import {DomIf as DomIf} from '@polymer/polymer/lib/elements/dom-if';
 import 'polymer3-granite-bootstrap/granite-bootstrap-min';
-import 'corporate-ui/css-modules/corporate-ui'
+import 'corporate-ui/css-modules/corporate-ui';
 import 'fontawesome-icon/fontawesome-icon';
 
 /**
@@ -19,37 +19,44 @@ class KsSearch extends PolymerElement {
             <style is="custom-style" include="granite-bootstrap-min"></style>
         </custom-style>
         <custom-style>
-             <style is="custom-style" include="corporate-ui"></style>
+             <style is="corporate-ui-style" include="coroporte-ui"></style>
         </custom-style>
         <style>
             /* shadow DOM styles go here */
             :host {
                 display: inline-block;
             }
-
-            iron-icon {
-                fill: rgba(0, 0, 0, 0);
-                stroke: currentcolor;
+            .input-group {
+                width: 100%;
+                border: 1px solid #ced4da;
+                border-radius: .25rem;
             }
-
-            :host([pressed]) iron-icon {
-                fill: currentcolor;
+            .input-group>.form-control {
+              border: none;
             }
+            .input-icon {
+                padding: .575rem .75rem;
+                font-size: 1rem;
+            }
+            .clear-input {
+                cursor: pointer;
+            }
+            
         </style>
         <div class="form-group sc-search">
-
-            <input id="ksSearch" value="{{value::input}}" class="form-control" type="text" on-focus="toggleIcon" on-input="toggleIcon"/>
-                <span class="input-icon">
-                <template is="dom-if" if="[[showClearIcon]]">
-                    <span on-click="clearInput">
-                        <fontawesome-icon prefix="fas" name="times" fixed-width></fontawesome-icon>
-                    </span>
-                </template>
-                     <template is="dom-if" if="[[!showClearIcon]]">
+            <div class="input-group">
+                <input id="ksSearch" value="{{value::input}}" class="form-control" type="text" on-focus="toggleIcon" on-input="toggleIcon"/>
+                <div class="input-icon">
+                    <template is="dom-if" if="[[showClearIcon]]">
+                        <span on-click="clearInput" class="clear-input">
+                            <fontawesome-icon prefix="fas" name="times" fixed-width></fontawesome-icon>
+                        </span>
+                    </template>
+                    <template is="dom-if" if="[[!showClearIcon]]">
                         <fontawesome-icon prefix="fas" name="[[iconClass]]" fixed-width></fontawesome-icon>
-                     </template>
-
-                </span>
+                    </template>
+                </div>
+            </div>
         </div>
         <div style="background-color: gray"> Value received in <span style="font-style: normal">ks-search</span> the custom element : [[value]]</div>
         `;
@@ -87,18 +94,20 @@ class KsSearch extends PolymerElement {
             placeholder = 'Scs_Core.Sök';
         }
         this.$.ksSearch.setAttribute('placeholder', placeholder);
-
+        this.toggleIcon();
     }
 
     clearInput() {
         this.$.ksSearch.value = '';
-        this.trigger('input');
+        //this.trigger('input');
+        this.set('value', this.$.ksSearch.value);
         if (typeof this.onClear === 'function') {
             this.onClear();
         }
         if (this.reloadOnClear) {
             window.location.reload(true);
         }
+        this.toggleIcon();
     }
 
     toggleIcon() {
