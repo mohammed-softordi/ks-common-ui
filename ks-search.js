@@ -19,28 +19,17 @@ class KsSearch extends PolymerElement {
             <style is="custom-style" include="granite-bootstrap-min"></style>
         </custom-style>
         <custom-style>
-             <style is="corporate-ui-style" include="coroporte-ui"></style>
+             <style is="corporate-ui" include="corporate-ui"></style>
         </custom-style>
         <style>
             /* shadow DOM styles go here */
             :host {
-                display: inline-block;
-            }
-            .input-group {
-                border: 1px solid #ced4da;
-                border-radius: .25rem;
-            }
-            .input-group>.form-control {
-              border: none;
-            }
-            .input-icon {
-                padding: .575rem .75rem;
-                font-size: 1rem;
+                display: block;
             }
             .clear-input {
                 cursor: pointer;
             }
-            
+
         </style>
         <div class="form-group sc-search">
             <div class="input-group">
@@ -70,7 +59,8 @@ class KsSearch extends PolymerElement {
                 value: false
             },
             value: {
-                type: String
+                type: String,
+                notify: true
             },
             iconClass: {
                 type: String
@@ -84,7 +74,6 @@ class KsSearch extends PolymerElement {
             }
         };
     }
-
 
     ready() {
         super.ready();
@@ -107,10 +96,16 @@ class KsSearch extends PolymerElement {
             window.location.reload(true);
         }
         this.toggleIcon();
+        // trigger custom event
+        this.customEv();
     }
 
     toggleIcon() {
         this.showClearIcon = this.$.ksSearch.value.length > 0;
+    }
+
+    customEv() {
+        this.dispatchEvent(new CustomEvent('custom-ev', {detail: { data: 'Trigger event from custom element' }}));
     }
 
 }
