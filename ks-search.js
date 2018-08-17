@@ -96,7 +96,7 @@ class KsSearch extends PolymerElement {
             window.location.reload(true);
         }
         this.toggleIcon();
-        // trigger custom event
+        // Sample trigger custom event
         this.customEv();
     }
 
