@@ -1,4 +1,4 @@
-﻿## Directory-based project format:
+## Directory-based project format:
 .idea/
 .languages-tmp/
 .language-delivery/
@@ -225,3 +225,4 @@ core/style/MovingToCorporateUI-byMarcus.less
 core/component/corporate-ui-intro/images/Dealer_locator.svg
 core/component/corporate-ui-intro/images/Explore.svg
 core/component/corporate-ui-intro/images/Share.svg
+build/
