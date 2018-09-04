@@ -1,7 +1,7 @@
 import {html, PolymerElement} from '@polymer/polymer/polymer-element';
 import {DomIf as DomIf} from '@polymer/polymer/lib/elements/dom-if';
 import 'polymer3-granite-bootstrap/granite-bootstrap-min';
-import 'corporate-ui/css-modules/corporate-ui';
+import 'corporate-ui/dist/css-modules/corporate-ui';
 import 'fontawesome-icon/fontawesome-icon';
 
 /**
