@@ -13,6 +13,8 @@ import 'fontawesome-icon/fontawesome-icon';
  * @demo demo/index.html
  */
 class NavItem extends PolymerElement {
+
+
     static get template() {
         return html`
         <custom-style>
@@ -31,68 +33,29 @@ class NavItem extends PolymerElement {
             }
 
         </style>
-        <nav class="nav navbar-nav navbar-right">
+       
             <a href="[[location]]" text="[[text]]"></a>
-        </nav>
+        `
 
     }
-    constructor() {
-        super();
-    }
+
     static get properties() {
         return {
-            showClearIcon: {
-                type: Boolean,
-                value: false
-            },
-            value: {
-                type: String,
-                notify: true
-            },
-            iconClass: {
+            location: {
                 type: String
             },
-            onClear: {
-                type: Object
-            },
-            reloadOnClear: {
-                type: String,
-                reflectToAttribute: true
+            text: {
+                type: String
             }
         };
     }
 
+    constructor() {
+        super();
+    }
+
     ready() {
         super.ready();
-        let placeholder = 'Scs_Core.Filtrera';
-        if (this.iconClass === 'fa-search') {
-            placeholder = 'Scs_Core.Sök';
-        }
-        this.$.ksSearch.setAttribute('placeholder', placeholder);
-        this.toggleIcon();
-    }
-
-    clearInput() {
-        this.$.ksSearch.value = '';
-        //this.trigger('input');
-        this.set('value', this.$.ksSearch.value);
-        if (typeof this.onClear === 'function') {
-            this.onClear();
-        }
-        if (this.reloadOnClear) {
-            window.location.reload(true);
-        }
-        this.toggleIcon();
-        // Sample trigger custom event
-        this.customEv();
-    }
-
-    toggleIcon() {
-        this.showClearIcon = this.$.ksSearch.value.length > 0;
-    }
-
-    customEv() {
-        this.dispatchEvent(new CustomEvent('custom-ev', {detail: { data: 'Trigger event from custom element' }}));
     }
 
 }
