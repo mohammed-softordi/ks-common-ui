@@ -21,14 +21,68 @@ class CorporateHeader extends PolymerElement {
                 <style is="corporate-ui" include="corporate-ui"></style>
             </custom-style>
             <style>
-                /* shadow DOM styles go here */
+                
                 :host {
                     display: block;
                 }
-               
+              
+                .navbar {
+                    padding: 0;
+                }
+                .navbar-default {
+                    border-bottom: 1px solid #e2e2e2;
+                }
+                .navbar-default .navbar-header {
+                    padding: 2px 0 0px;
+                    border-bottom: 0;
+                }
+                .navbar-default .navbar-header span{
+                    text-transform: uppercase;
+                }
+               .navbar-symbol {
+                    width: 48px;
+                    height: 46px;
+                    float: right;
+                    margin-right: 10px;
+                    margin-left: 45px;
+                    margin-top: 9px;
+                }
+                .navbar-symbol:before {
+                    display: inline-block;
+                    content: "";
+                    background-image: url(https://static.scania.com/resources/logotype/scania/scania-symbol.png);
+                    background-image: url(https://static.scania.com/resources/logotype/scania/scania-symbol.svg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: inherit;
+                    height: inherit;
+                }
+                /*.navbar-default .navbar-nav.ml-auto {
+                    margin: 15px 0 0 -15px;
+                }*/
                                 
             </style>
-            <nav class="navbar navbar-default">
+            
+            <nav class="navbar navbar-expand-lg navbar-default">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="[[siteUrl]]"></a>
+                               <span>[[siteName]]</span>
+                      
+                      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#main-navigation" aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+                      
+                </div>
+                      
+               
+                <div class="navbar-nav ml-auto">
+                  <slot></slot>
+                  <a href="[[siteUrl]]" class="navbar-symbol"></a>
+                </div>
+            </nav>
+            
+            
+            <!--nav class="navbar navbar-default">
                   <div class="navbar-header">
                       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navigation">
                         <span class="sr-only">Toggle navigation</span>
@@ -37,14 +91,16 @@ class CorporateHeader extends PolymerElement {
                         <span class="icon-bar"></span>
                       </button>
                     
-                     <a class="navbar-brand" href="[[siteUrl]]"></a>
+                      <a class="navbar-brand" href="[[siteUrl]]"></a>
                      [[siteName]]
-                   <a href="[[siteUrl]]" class="navbar-symbol"></a>
-                    <nav class="nav navbar-nav navbar-right">
-                      <slot></slot>
-                    </nav>
-                  </div>
-            </nav>
+                   
+                       <a href="[[siteUrl]]" class="navbar-symbol"></a>
+                      <nav class="nav navbar-nav navbar-right">
+                          <slot></slot>
+                          
+                      </nav>
+                   </div>
+            </nav-->
 `
 
     }

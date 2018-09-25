@@ -27,10 +27,17 @@ class NavItem extends PolymerElement {
             /* shadow DOM styles go here */
             :host {
                 display: block;
+                margin: 15px 0 0 -15px;
             }
-            .clear-input {
-                cursor: pointer;
+             a {
+                padding: 15px;
+                font-family: "Scania Sans";
+                font-weight: normal;
+                font-size: 12px;
+                color: #747472;    
+                text-transform: uppercase;
             }
+            
 
         </style>
        
