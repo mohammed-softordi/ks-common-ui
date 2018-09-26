@@ -46,6 +46,7 @@ class CorporateHeader extends PolymerElement {
                     margin-right: 10px;
                     margin-left: 45px;
                     margin-top: 9px;
+                  
                 }
                 .navbar-symbol:before {
                     display: inline-block;
@@ -77,7 +78,7 @@ class CorporateHeader extends PolymerElement {
                
                 <div class="navbar-nav ml-auto">
                   <slot></slot>
-                  <a href="[[siteUrl]]" class="navbar-symbol"></a>
+                  <a href="[[siteUrl]]" class="navbar-symbol should-stick"></a>
                 </div>
             </nav>
             
