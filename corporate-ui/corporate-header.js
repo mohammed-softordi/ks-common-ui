@@ -125,6 +125,11 @@ class CorporateHeader extends PolymerElement {
                <p>Does not provide standalone custome element for each component</p>
                <p>You have to use the whole CUI or nothing</p>
           </demo-snippet>
+          <demo-snippet> 
+               <p>Impossible to contribute. Pull requests are ignored</p>
+               <p> Does not follow Open Source standard and praxis</p>
+               <p> Does not follow Polymer 1 standard and praxis. It ia an hybrid between Polymer 1 and workarounds </p>
+          </demo-snippet>
         </div>
         <div class="col col-lg-6">
         <h3>KS UI is based on up to date versions of frameworks used</h3>
@@ -161,6 +166,11 @@ class CorporateHeader extends PolymerElement {
           </demo-snippet>
           <demo-snippet> 
                <p>Provides standalone custome element for each component in the toolbox</p>
+          </demo-snippet>
+          <demo-snippet> 
+               <p>Easy to contribute</p>
+               <p>Follow Open Source standard and praxis</p>
+               <p>Follow Polymer 3 standard and praxis</p>
           </demo-snippet>
           
         </div>
