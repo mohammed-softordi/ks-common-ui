@@ -7,6 +7,8 @@
     <title>icon-toggle demo</title>
 
     <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="../node_modules/polymer3-granite-bootstrap/granite-bootstrap-min.js"></script>
+    <script src="../node_modules/corporate-ui/dist/css-modules/corporate-ui.js"></script>
 
     <script type="module">
       import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
@@ -14,11 +16,17 @@
       import '../icon-toggle.js';
       import '../ks-search';
       import '../corporate-ui/corporate-header';
-      import '../corporate-ui/nav-item'
+      import '../corporate-ui/nav-item';
     </script>
     <custom-style>
       <style is="custom-style" include="demo-pages-shared-styles">
       </style>
+    </custom-style>
+    <custom-style>
+      <style is="corporate--ui" include="corporate-ui"></style>
+    </custom-style>
+    <custom-style>
+      <style is="granite-bootstrap" include="granite-bootstrap-min"></style>
     </custom-style>
       <style>
           body{
@@ -31,6 +39,97 @@
         <nav-item location="https://www.scania.com/world/#/" text="Scania"></nav-item>
         <nav-item location="#" text="Dealer"></nav-item>
     </corporate-header>
+    <h2>Findings regarding Corporate-UI toolbox in KS toolbox</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-6">
+          <h4>Corporate UI is based on legacy versions of frameworks used</h4>
+          <demo-snippet>
+            <a  href="http://bootstrapdocs.com/v3.2.0/docs/components/#navbar-default">Bootstrap 3.2.0</a>
+
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Brand</a>
+                </div>
+
+                <a href="#">Home</a>
+                <a  href="#">Link</a>
+
+                <nav class="nav navbar-nav navbar-right">
+                  <a href="#">Link</a>
+                </nav>
+
+              </div><!-- /.container-fluid -->
+            </nav>
+          </demo-snippet>
+          <demo-snippet>
+            <a  href="https://www.polymer-project.org/1.0/docs/about_10">Polymer 1.4.0</a>
+            <p>Not available as npm package. @mohammed-softordi register a nmp package for it to work with KS UI.</p>
+            <p>Corprate UI components will conflict with KS UI components</p>
+          </demo-snippet>
+          <demo-snippet>
+            <p>Does not provide standalone custome element for each component</p>
+            <p>You have to use the whole CUI or nothing</p>
+          </demo-snippet>
+          <demo-snippet>
+            <p>Impossible to contribute. Pull requests are ignored</p>
+            <p> Does not follow Open Source standard and praxis</p>
+            <p> Does not follow Polymer 1 standard and praxis. It ia an hybrid between Polymer 1 and workarounds </p>
+          </demo-snippet>
+        </div>
+        <div class="col col-lg-6">
+          <h4>KS UI is based on up to date versions of frameworks used</h4>
+          <demo-snippet>
+            <a  href="https://getbootstrap.com/docs/4.0/components/navbar/">Bootstrap 4.0.0</a>
+            <p>Corporate UI does not work with this template</p>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="#">Brand</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navigation" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+              </ul>
+            </nav>
+          </demo-snippet>
+          <demo-snippet>
+            <a  href="https://www.polymer-project.org/3.0/docs/devguide/feature-overview">Polymer 3.x</a>
+            <p>Nmp supported</p>
+            <p>Breaking changes from Polymer 1 meaning one has rewrite Corporate UI from the ground</p>
+
+          </demo-snippet>
+          <demo-snippet>
+            <p>Provides standalone custome element for each component in the toolbox</p>
+          </demo-snippet>
+          <demo-snippet>
+            <p>Easy to contribute</p>
+            <p>Follow Open Source standard and praxis</p>
+            <p>Follow Polymer 3 standard and praxis</p>
+          </demo-snippet>
+
+        </div>
+      </div>
+    </div>
     <div class="vertical-section-container centered">
       <h1>KS Common component toolbox</h1>
       <h3>Basic icon-toggle demo</h3>
