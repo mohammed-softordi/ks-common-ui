@@ -63,6 +63,7 @@ class KsMainContent extends KsStateBehavior(PolymerElement) {
                     'body[ks-sticky-mode] .sticky-toolbar{z-index:1011;top:55px;position:fixed;}body[ks-fullscreen-mode] .sticky-toolbar{top:5px;}' +
                     'body[ks-top-banner]:not([ks-main-header-hidden]):not([ks-sticky-mode]):not([ks-fullscreen-mode]) .sticky-toolbar{top:168px;}' +
                     'body[ks-top-banner][ks-main-header-hidden]:not([ks-sticky-mode]):not([ks-fullscreen-mode]) .sticky-toolbar{top:97px;}'+
+                    'body > app-root, body > div {display: flex; flex-direction: column; margin: 0; height: 100vh;}' +
                     '@media (max-width: 991px) {body[ks-main-header-hidden] .navbar.navbar-default, ' +
                     'body[ks-main-header-hidden] .navbar.navbar-default .container-fluid{background-color:transparent;}' +
                     'body[ks-main-header-hidden] .navbar.navbar-default .navbar-header{border-bottom:none;}' +

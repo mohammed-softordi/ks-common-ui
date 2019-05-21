@@ -114,7 +114,6 @@ class KsMainFooter extends KsGlobalBehavior(PolymerElement) {
     }
     constructor() {
         super();
-        this.classList.add(this.tagName.toLowerCase());
     }
     static get properties() {
         return {

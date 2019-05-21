@@ -15,6 +15,15 @@ sharedStylesElement.innerHTML =
     <style include="corporate-ui-fonts"></style>
     <style include="corporate-ui-vendors"></style>
     <style include="corporate-ui">
+     /* #ks-main-header shared style */
+      .ks-nav-item.ks-main-header {
+        padding: 15px;
+        font-family: "Scania Sans";
+        font-weight: normal;
+        font-size: 12px;
+        color: #747472;
+        text-transform: uppercase;
+      }
       /* #ks-main-footer shared style */
       .ks-nav-item.ks-main-footer {
         font-size: 13px;

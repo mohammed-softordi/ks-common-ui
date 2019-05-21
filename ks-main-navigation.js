@@ -1,6 +1,8 @@
 
 import {html, PolymerElement} from '@polymer/polymer/polymer-element';
 import {DomIf as DomIf} from '@polymer/polymer/lib/elements/dom-if';
+import {KsStateBehavior} from './behaviors/state-behavior';
+import {KsGlobalBehavior} from './behaviors/global-behavior';
 import './ks-shared-styles';
 
 /**
@@ -11,7 +13,7 @@ import './ks-shared-styles';
  * @polymer
  * @demo demo/index.html
  */
-class KsMainNavigation extends PolymerElement {
+class KsMainNavigation extends KsStateBehavior(KsGlobalBehavior(PolymerElement)) {
     static get template() {
         return html`
         <style include="ks-shared-styles">
