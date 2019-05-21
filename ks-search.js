@@ -1,8 +1,11 @@
 import {html, PolymerElement} from '@polymer/polymer/polymer-element';
 import {DomIf as DomIf} from '@polymer/polymer/lib/elements/dom-if';
 import 'polymer3-granite-bootstrap/granite-bootstrap-min';
-import 'corporate-ui/dist/css-modules/corporate-ui';
 import 'fontawesome-icon/fontawesome-icon';
+import './assets/js/corporate-ui/corporate-ui-vendors'
+import './assets/js/corporate-ui/corporate-ui';
+
+
 
 /**
  * `ks-search`
@@ -15,13 +18,8 @@ import 'fontawesome-icon/fontawesome-icon';
 class KsSearch extends PolymerElement {
     static get template() {
         return html`
-        <custom-style>
-            <style is="custom-style" include="granite-bootstrap-min"></style>
-        </custom-style>
-        <custom-style>
-             <style is="corporate-ui" include="corporate-ui"></style>
-        </custom-style>
-        <style>
+        <style include="granite-bootstrap-min"></style>
+        <style include="corporate-ui">
             /* shadow DOM styles go here */
             :host {
                 display: block;
