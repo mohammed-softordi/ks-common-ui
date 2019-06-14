@@ -57,10 +57,11 @@ class KsMainContent extends KsStateBehavior(PolymerElement) {
             metaData = [{name: "msapplication-TileColor", content: "#000"},
                 {name: "msapplication-TileImage", content: "https://static.scania.com/resources/logotype/scania/favicon/ms-icon-144x144.png"}
             ],
-            styleContent = 'body{display:flex;flex-direction:column;}[hidden]{display: none!important;}body[ks-primary-submenu-open] .navbar.navbar-default .container-fluid{background-color:#f7f7f7;}' +
+            styleContent = 'body{display:flex;flex-direction:column;margin:0}[hidden]{display: none!important;}body[ks-primary-submenu-open] .navbar.navbar-default .container-fluid{background-color:#f7f7f7;}' +
                     'body[ks-primary-submenu-open] .collapse.navbar-collapse{margin-bottom:36px;background-color:#fff;}body[ks-main-header-hidden] .sticky-toolbar{top:58px;}' +
                     'body[ks-primary-submenu-open][ks-fullscreen-mode] .collapse.navbar-collapse{margin-bottom:0;}' +
-                    'body[ks-sticky-mode] .sticky-toolbar{z-index:1011;top:55px;position:fixed;}body[ks-fullscreen-mode] .sticky-toolbar{top:5px;}' +
+                'body[ks-fullscreen-mode] ks-main-content{margin-top:35px;}' +
+                    'body[ks-sticky-mode] .sticky-toolbar{z-index:1011;top:55px;position:fixed;}' +
                     'body[ks-top-banner]:not([ks-main-header-hidden]):not([ks-sticky-mode]):not([ks-fullscreen-mode]) .sticky-toolbar{top:168px;}' +
                     'body[ks-top-banner][ks-main-header-hidden]:not([ks-sticky-mode]):not([ks-fullscreen-mode]) .sticky-toolbar{top:97px;}'+
                     'body > app-root, body > div {display: flex; flex-direction: column; margin: 0; height: 100vh;}' +
@@ -87,7 +88,7 @@ class KsMainContent extends KsStateBehavior(PolymerElement) {
             meta.content = content.content;
             document.head.appendChild(meta);
         });
-        //this.unresolved();
+        this.unresolved();
     }
 }
 

@@ -20,6 +20,7 @@ class KsNavItem extends KsAnchorBehavior(PolymerElement) {
             :host {
                 display: inline-block;
             }
+           
         </style>
 
         <!-- shadow DOM for your element -->

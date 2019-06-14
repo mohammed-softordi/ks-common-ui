@@ -12,69 +12,71 @@ export const KsGlobalBehavior = function (superClass) {
         constructor() {
             super();
         }
+
         static get properties() {
             return {
                 //Use this props to show or hide an element
                 disable: {
-                    type: String,
-                    value: '',
-                    observer: '_onDisableChange'
+                    type: Boolean,
+                    value: false,
+                    observer: '_onDisableChange',
+                    reflectToAttribute: true
                 }
             };
         }
 
-        _onDisableChange(){
-            this.hidden = this.disable === 'true' || this.hasAttribute('ks-fullscreen-mode');
-            if(this.hidden) {
-                this.setAttribute('hidden', '');
-            } else {
-                this.removeAttribute('hidden');
-            }
+        _onDisableChange() {
+            this.hidden = this.disable == true || this.hasAttribute('ks-fullscreen-mode');
         }
+
         conditionalClass(className, obj, property) {
-            if(!obj){
+            if (!obj) {
                 return;
             }
-            if(Array.isArray(obj)){
+            if (Array.isArray(obj)) {
                 var result = '';
                 obj.forEach(function (item) {
-                    if(obj.hasOwnProperty(property)){
+                    if (obj.hasOwnProperty(property)) {
                         result = obj[property] ? className : '';
                     }
                 })
-            } else{
+            } else {
                 result = obj[property] ? className : '';
             }
             return result;
         }
+
         conditionalAttr(attrValue) {
             return attrValue ? attrValue : '';
         }
+
         mergeArray(source, destination) {
-            source.map(function(item, index){
-                if(!destination.inArray(item, false, false, 'state')){
+            source.map(function (item, index) {
+                if (!destination.inArray(item, false, false, 'state')) {
                     destination.push(item);
                 }
             });
         }
-        renamePropertiy(obj, oldProperty, newPredicate, replace){
-            if(obj.hasOwnProperty(oldProperty)){
+
+        renamePropertiy(obj, oldProperty, newPredicate, replace) {
+            if (obj.hasOwnProperty(oldProperty)) {
                 obj[newPredicate] = obj[oldProperty];
-                if(replace){
+                if (replace) {
                     delete obj[oldProperty];
                 }
             }
-            if(Array.isArray(obj)){
+            if (Array.isArray(obj)) {
                 obj.forEach(function (item) {
                     this.renamePropertiy(item, oldProperty, newPredicate, replace)
                 }, this)
             }
             var childObj = this.hasObjectProps(obj);
-            if(childObj) {
+            if (childObj) {
                 this.renamePropertiy(childObj, oldProperty, newPredicate, replace);
             }
             return obj;
         }
+
         hasObjectProps(obj) {
             for (var i in obj) {
                 if (typeof obj[i] === 'object') {
@@ -85,6 +87,7 @@ export const KsGlobalBehavior = function (superClass) {
             }
             return false;
         }
+
         findById(collection, id) {
             for (var i in collection) {
                 if (collection[i].id == id) {
@@ -93,6 +96,7 @@ export const KsGlobalBehavior = function (superClass) {
             }
             return false;
         }
+
         findByAttr(collection, attr) {
             for (var i in collection) {
                 if (collection[i]['getAttribute'] && collection[i].getAttribute(attr) !== null) {
@@ -101,8 +105,9 @@ export const KsGlobalBehavior = function (superClass) {
             }
             return false;
         }
-        safeCall(element, method, argument){
-            if(!element){
+
+        safeCall(element, method, argument) {
+            if (!element) {
                 return;
             }
             element[method](argument);

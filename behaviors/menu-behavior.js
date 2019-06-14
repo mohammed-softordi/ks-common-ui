@@ -5,43 +5,57 @@
  *
  * @polymerBehavior KsMenuBehavior
  */
+import {html, PolymerElement} from '@polymer/polymer/polymer-element';
+import {KsStateBehavior} from './state-behavior';
+import {KsGlobalBehavior} from './global-behavior';
 
-export const KsMenuBehavior = function (superClass) {
-    return class extends superClass {
+export class KsMenuBehavior extends KsStateBehavior(KsGlobalBehavior(PolymerElement)) {
+
         constructor() {
             super();
-            window.CUIBehaviors = window.CUIBehaviors || {};
+        this.identification = [];
+        this.allMenuItems = [];
         }
         static get properties() {
             return {
                 items: {
                     type: Array,
-                    value: function () {
-                        return [];
-                    },
-                    observer: '_itemAdded'
+                    value: [],
+                    observer: '_itemAdded',
+                    reflectToAttribute: true
                 },
                 disableMenu: {
                     type: String,
                     value: 'false',
-                    observer: '_onDisableMenu'
+                    observer: '_onDisableMenu',
+                    reflectToAttribute: true
+                },
+                subMenuClickHandler: {
+                    type: Object
                 }
             };
         }
-        identification = [];
-        allMenuItems = [];
 
         _onDisableMenu(){
             this.hideMenu = (this.disableMenu === '' || this.disableMenu === 'true' );
             if(this.hideMenu){
                 this.allMenuItems = [];
             }
-            CUIBehaviors.StateBehavior.submenuClosed(this.hideMenu);
+            this.submenuClosed(this.hideMenu);
         }
 
         _itemAdded() {
             if(this._isResolved(this.items)){
-                CUIBehaviors.GlobalBehavior.mergeArray(this.items, this.allMenuItems);
+                // this.attributeChangedCallback('items', this.items, this.items);
+                this.mergeArray(this.items, this.allMenuItems);
+                this.notifySplices('items',[{
+                    object: this.items,
+                    index: 0,
+                    addedCount: this.items.length,
+                    removed: this.items,
+                    type: 'splice'
+                }]);
+
                 document.dispatchEvent(new CustomEvent('menu-item-added', {detail: {menuItems: $.extend(true, [], this.allMenuItems), bubbles: false, composed: true}}));
             }
         }
@@ -58,7 +72,11 @@ export const KsMenuBehavior = function (superClass) {
             });
             return resolved;
         }
-
+        onSubMenuClick(event){
+            if (typeof this.subMenuClickHandler === 'function') {
+                this.subMenuClickHandler(event);
+            }
+        }
         subMenuHash(title) {
             var matcher = /[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g;
             if(title) {
@@ -70,15 +88,15 @@ export const KsMenuBehavior = function (superClass) {
             var allOpenSubMenu = document.querySelectorAll(subMenuSelector);
             allOpenSubMenu.forEach(function (element) {
                 element.classList.remove('open');
-                CUIBehaviors.GlobalBehavior.safeCall(element.classList, 'remove', 'open');
-            });
+                this.safeCall(element.classList, 'remove', 'open');
+            }, this);
         }
 
         toggleSubmenu(parentNode, activeSubmenu, notify) {
-            CUIBehaviors.StateBehavior.submenuClosed(notify);
+           this.submenuClosed(notify);
             if(activeSubmenu && activeSubmenu.querySelector('li') !== null) {
                 activeSubmenu.classList.add('open');
-                CUIBehaviors.StateBehavior.submenuOpen(notify);
+                this.submenuOpen(notify);
             }
         }
 
@@ -98,16 +116,15 @@ export const KsMenuBehavior = function (superClass) {
         toggle(parentNode, isPrimary) {
             if(isPrimary){
                 document.querySelectorAll('.dropdown-trigger').forEach(function(trigger){
-                    CUIBehaviors.GlobalBehavior.safeCall(trigger.parentNode.classList, 'remove', 'active');
-                })
+                    this.safeCall(trigger.parentNode.classList, 'remove', 'active');
+                }, this)
             }else{
-                CUIBehaviors.GlobalBehavior.safeCall(document.querySelector('.more-trigger').parentNode.classList, 'remove', 'active');
+               this.safeCall(document.querySelector('.more-trigger').parentNode.classList, 'remove', 'active');
             }
-            var activeSubmenu = this.getActiveSubmenu(parentNode.title, parentNode.id);
+            var activeSubmenu = this.getActiveSubmenu(parentNode.dataset.title, parentNode.id);
             this.resetMenu('.subnav.open');
             this.toggleSubmenu(parentNode, activeSubmenu, true);
         }
-    }
 };
 
 /** @polymerBehavior */

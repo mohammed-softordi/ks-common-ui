@@ -50,6 +50,7 @@ class KsMainFooter extends KsGlobalBehavior(PolymerElement) {
                 padding: 8px 0;
                 margin: 0;
                 letter-spacing: 0.05rem;
+                text-align: left;
             }
             :host ::slotted(ks-nav-item) {
                 display: inline-block;
@@ -103,7 +104,7 @@ class KsMainFooter extends KsGlobalBehavior(PolymerElement) {
                         <nav class="footer-links">
                             <slot name="privacy"></slot>
                         </nav>
-                        <p class="footer-copy-text text-left">
+                        <p class="footer-copy-text">
                             <span>&copy;</span> {{copyright}}
                         </p>
                     </div>
@@ -129,6 +130,7 @@ class KsMainFooter extends KsGlobalBehavior(PolymerElement) {
 
     ready() {
         super.ready();
+        this.classList.add(this.tagName.toLowerCase());
     }
 }
 

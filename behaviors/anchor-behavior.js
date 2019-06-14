@@ -24,7 +24,7 @@ export const KsAnchorBehavior = function (superClass) {
                 ping: { type: String },
                 referrerpolicy : { type: String },
                 rel: { type: String },
-                target: { type: String },
+                target: { type: String, value: '' },
                 type: { type: String }
             };
         }

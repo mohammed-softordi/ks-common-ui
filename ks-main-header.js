@@ -1,6 +1,9 @@
 import {html, PolymerElement} from '@polymer/polymer/polymer-element';
 import {DomIf as DomIf} from '@polymer/polymer/lib/elements/dom-if';
+import {afterNextRender} from '@polymer/polymer/lib/utils/render-status.js';
+import {KsGlobalBehavior} from './behaviors/global-behavior';
 import {KsStateBehavior} from './behaviors/state-behavior';
+
 import './ks-shared-styles';
 
 /**
@@ -11,14 +14,58 @@ import './ks-shared-styles';
  * @polymer
  * @demo demo/index.html
  */
-class KsMainHeader extends KsStateBehavior(PolymerElement) {
+class KsMainHeader extends  KsGlobalBehavior(KsStateBehavior(PolymerElement)) {
     static get template() {
         return html`
         <style include="ks-shared-styles">
             :host {
                 display: block;
             }
+            
+            @keyframes logoslide {
+                0% {
+                    right: -50px;
+                }
+                1% {
+                    right: -50px;
+                }
+                50% {
+                    width: 48px;
+                    height: 46px;
+                }
+                100% {
+                    right: 10px;
+                    width: 40px;
+                    height: 37px
+                }
+            }
+           
+            @media (min-width: 992px) {
+                :host .navbar-header {
+                    padding: 0;
+                }
+                :host-context(.sticky-header) .navbar-default .navbar-header .navbar-symbol,
+                :host-context(.sticky-header[hidden]) .navbar-default .navbar-header .navbar-symbol {
+                    width: 40px;
+                    height: 37px;
+                }
+                
+                :host-context(.sticky-header) .navbar-default .navbar-header .navbar-symbol:before,
+                :host-context(.sticky-header[hidden]) .navbar-default .navbar-header .navbar-symbol:before {
+                    position: fixed;
+                    top: 7px;
+                    right: 10px;
+                    animation: logoslide .4s ease-in-out;
+                }
+            }
+            
             @media (max-width: 991px) {
+                :host .navbar-header {
+                    /*line-height: 0px;*/
+                }
+                :host .navbar-default .navbar-header, .app .navbar-default .navbar-header {
+                    padding: 15px;
+                }
                 :host .navbar-default {
                     position: fixed;
                     top: 0;
@@ -49,7 +96,7 @@ class KsMainHeader extends KsStateBehavior(PolymerElement) {
                     bottom: 0;
                     left: 0;
                     right: 0;
-                }
+                } 
             }
         </style>
         <nav class="navbar navbar-default ks-main-header">
@@ -62,22 +109,15 @@ class KsMainHeader extends KsStateBehavior(PolymerElement) {
                 </nav>
             </div>
         </nav>`
-            ;
+        ;
     }
     constructor() {
         super();
     }
     static get properties() {
         return {
-            siteName: {
-                type: String,
-                value: ''
-            },
-            shortName: {
-                type: String,
-                value: String
-            },
-
+            siteName: String,
+            shortName: String,
             siteUrl: {
                 type: String,
                 value: '/'
@@ -85,18 +125,9 @@ class KsMainHeader extends KsStateBehavior(PolymerElement) {
 
         };
     }
-
-    ready() {
-        super.ready();
-        this._setSize();
-        window.addEventListener('resize', this._setSize.bind(this));
-    }
-    _setSize() {
-        this.style.padding = '';
-        if(window.innerWidth < 992) {
-            // TODO - We should use height, but then we need to add flex-grow & flex-shrink
-            this.style.paddingTop = this.querySelector('.navbar-default').offsetHeight + 'px';
-        }
+    attributeChangedCallback (name, oldValue, newValue) {
+        super.attributeChangedCallback (name, oldValue, newValue);
+        this.header(this.disable);
     }
 }
 
