@@ -1,7 +1,7 @@
 {
-  "name": "kse-common-ui",
+  "name": "ks-common-ui",
   "version": "0.0.2",
-  "description": "kse-common-ui",
+  "description": "ks-common-ui",
   "dependencies": {
     "granite-bootstrap": "LostInBrittany/granite-bootstrap#^4.0.2-beta.2"
   },
@@ -11,8 +11,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/github.com/mohammed-softordi/kse-common-ui.git"
+    "url": "git://github.com/github.com/mohammed-softordi/ks-common-ui.git"
   },
-  "homepage": "https://github.com/mohammed-softordi/kse-common-ui",
+  "homepage": "https://github.com/mohammed-softordi/ks-common-ui",
   "license": "MIT"
 }

@@ -1,4 +1,4 @@
-# \<kse-common-ui-toolbox\>
+# \<ks-common-ui-toolbox\>
 
 
 ## Install the Polymer-CLI
