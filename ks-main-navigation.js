@@ -49,10 +49,10 @@ class KsMainNavigation extends KsStateBehavior(KsGlobalBehavior(PolymerElement))
                     -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
                     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
                 }
-                :host(.sticky-header) .navbar-nav > .subnav .dropdown-menu {
-                    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175) !important;
-                    box-shadow: 0 6px 12px rgba(0, 0, 0, .175) !important;
-                }
+                /*:host(.sticky-header) .navbar-nav > .subnav .dropdown-menu {*/
+                /*    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175) !important;*/
+                /*    box-shadow: 0 6px 12px rgba(0, 0, 0, .175) !important;*/
+                /*}*/
                 :host(.sticky-header) .navbar-default {
                     z-index: 1010;
                 }
