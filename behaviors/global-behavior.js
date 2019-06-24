@@ -17,8 +17,8 @@ export const KsGlobalBehavior = function (superClass) {
             return {
                 //Use this props to show or hide an element
                 disable: {
-                    type: Boolean,
-                    value: false,
+                    type: String,
+                    value: '',
                     observer: '_onDisableChange',
                     reflectToAttribute: true
                 }
@@ -26,7 +26,7 @@ export const KsGlobalBehavior = function (superClass) {
         }
 
         _onDisableChange() {
-            this.hidden = this.disable == true || this.hasAttribute('ks-fullscreen-mode');
+            this.hidden = this.disable || this.hasAttribute('ks-fullscreen-mode');
         }
 
         conditionalClass(className, obj, property) {

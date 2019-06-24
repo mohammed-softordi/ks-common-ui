@@ -101,7 +101,8 @@ class KsPrimaryMenu extends KsMenuBehavior {
         
             <ul class="nav navbar-nav main-menu visible-lg visible-md">       
                  <template is="dom-repeat" items="{{items}}">
-                     <li class$="main-menu-item {{conditionalClass('active', item, 'active')}}" id="[[index]]" data-title$="{{item.title}}">
+                     <li class$="main-menu-item {{conditionalClass('active', item, 'active')}}" id="{{item.id}}"
+                      data-title$="{{item.title}}" index$="[[index]]">
                       <a href="{{conditionalAttr(item.href)}}" target="{{conditionalAttr(item.target)}}" 
                       link$="{{conditionalAttr(item.link)}}" on-click="onToggleSubmenu">
                       <span class="pipe"></span>
@@ -117,7 +118,8 @@ class KsPrimaryMenu extends KsMenuBehavior {
                       </a>
                         <ul class="dropdown-menu more-dropdown" aria-labelledby="primaryMoreDrop">
                            <template is="dom-repeat" items="{{items}}">
-                                 <li class$="{{conditionalClass('active', item, 'active')}}" id="[[index]]" data-title$="{{item.title}}">
+                                 <li class$="{{conditionalClass('active', item, 'active')}}" id="[[item.id]]" 
+                                        index$="[[index]]" data-title$="{{item.title}}">
                                       <a href="{{conditionalAttr(item.href)}}" target="{{conditionalAttr(item.target)}}" 
                                       link$="{{conditionalAttr(item.link)}}" on-click="onDropdownItemActive">
                                            [[item.title]]
@@ -128,8 +130,8 @@ class KsPrimaryMenu extends KsMenuBehavior {
                 </li>
             </ul>
             <div class="nav navbar-nav visible-lg visible-md">
-                  <template is="dom-repeat" items="{{items}}" as="primary" index-as="primary-id">
-                        <div class="dropdown subnav" id="[[subMenuHash(primary.title)]]-[[primary-id]]">
+                  <template is="dom-repeat" items="{{items}}" as="primary" index-as="primary-index">
+                        <div class="dropdown subnav" id="[[primary.id]]-[[primary-index]]">
                             <ul class="dropdown-menu">
                                 <template is="dom-if" if="[[hasSubmenu(primary)]]">
                                     <li class="caption">[[primary.title]]</li>

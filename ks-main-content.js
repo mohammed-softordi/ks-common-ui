@@ -71,7 +71,9 @@ class KsMainContent extends KsStateBehavior(PolymerElement) {
                     'body[ks-main-header-hidden] .navbar.navbar-default .navbar-header button.navbar-toggle{border-right:none;left:19px}' +
                     'body[ks-main-header-hidden] .navbar.navbar-default .navbar-header button.navbar-toggle:focus{background-color:#f5f5f5;}' +
                     'body[ks-main-header-hidden] .navbar.navbar-default .navbar-header button.navbar-toggle:hover{background-color:#f5f5f5;}' +
-                    'body[ks-main-header-hidden] .navbar.navbar-default .navbar-header button.navbar-toggle.collapsed{background-color:transparent;}}',
+                    'body[ks-main-header-hidden] .navbar.navbar-default .navbar-header button.navbar-toggle.collapsed{background-color:transparent;}}' +
+                    'body[ks-sticky-mode]:not([ks-main-header-hidden]) .user-account-menu {padding-right: 60px;}',
+            
         style = document.createElement('style');
         style.textContent = styleContent;
         document.head.appendChild(style);

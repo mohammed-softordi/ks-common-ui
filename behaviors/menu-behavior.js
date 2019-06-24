@@ -46,7 +46,6 @@ export class KsMenuBehavior extends KsStateBehavior(KsGlobalBehavior(PolymerElem
 
         _itemAdded() {
             if(this._isResolved(this.items)){
-                // this.attributeChangedCallback('items', this.items, this.items);
                 this.mergeArray(this.items, this.allMenuItems);
                 this.notifySplices('items',[{
                     object: this.items,
@@ -100,9 +99,8 @@ export class KsMenuBehavior extends KsStateBehavior(KsGlobalBehavior(PolymerElem
             }
         }
 
-        getActiveSubmenu(title, id) {
-            var subMenuHash = this.subMenuHash(title) + '-' + id,
-                activeSubMenu = this.querySelector('#' + subMenuHash);
+        getActiveSubmenu(parentNode) {
+            var activeSubMenu = this.querySelector('#' + parentNode.id + '-' +  parentNode.getAttribute('index'));
             return activeSubMenu;
         }
 
@@ -121,7 +119,7 @@ export class KsMenuBehavior extends KsStateBehavior(KsGlobalBehavior(PolymerElem
             }else{
                this.safeCall(document.querySelector('.more-trigger').parentNode.classList, 'remove', 'active');
             }
-            var activeSubmenu = this.getActiveSubmenu(parentNode.dataset.title, parentNode.id);
+            var activeSubmenu = this.getActiveSubmenu(parentNode);
             this.resetMenu('.subnav.open');
             this.toggleSubmenu(parentNode, activeSubmenu, true);
         }

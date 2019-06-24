@@ -96,7 +96,7 @@ class KsFullscreen extends KsStateBehavior(KsGlobalBehavior(PolymerElement)) {
        
         </style>
         
-        <div class="hidden-xs sticky-toolbar" id="stickyToolbar">
+        <div class="hidden-xs sticky-toolbar" id="stickyToolbar" hidden="[[hidden]]" >
             <a on-click="onfullSreenToggled" class="icon-fullscreen" data-toggle="tooltip" id="fullcreenToggle">
             </a>
         </div>
@@ -164,52 +164,45 @@ class KsFullscreen extends KsStateBehavior(KsGlobalBehavior(PolymerElement)) {
     }
 
     onfullSreenToggled() {
+        var mainFooter = document.querySelector('ks-main-footer'),
+            mainHeader = document.querySelector('ks-main-header');
+        this.toggleElements(mainFooter, mainFooter.shadowRoot.querySelector('footer'));
+        this.toggleElements(mainHeader, mainHeader.shadowRoot.querySelector('nav'));
+
         if (this.hideElements.length > 0) {
             this.elementsToHide = document.querySelectorAll(this.hideElements.join(', '));
             this.elementsToHide.forEach(function(element){
-                var isDisabled = element.hasAttribute('disable'),
-                    isFullScreenMode = element.hasAttribute('ks-fullscreen-mode');
-
-                element.toggleAttribute('ks-fullscreen-mode');
-                if(isDisabled) {
-                    return;
-                }
-                if(isFullScreenMode){
-                    element.removeAttribute('hidden');
-                } else {
-                    element.setAttribute('hidden', '');
-                }
-            });
+                this.toggleElements(element, element);
+            }, this);
         }
 
-        this.toggleAttribute('fullscreen-active');
-        var isFullScreenActive = this.hasAttribute('fullscreen-active');
-        this.fullscreen(isFullScreenActive);
-        // Todo: Find better:
-        // this.toggleMainHeader(isFullScreenActive); // This solve the issue where a deep shadow dom css cannot refer a parent element(Example: <body>).
-        if(isFullScreenActive){
-            this.toolTipTitle = this.closeTitle;
-        } else {
-            this.toolTipTitle = this.openTitle;
-        }
+        this.activateFullScreen();
         //To notify the window that the layout has changed. E.g the sticky-header will be recalculated
         window.dispatchEvent(new CustomEvent('scroll'));
     }
 
-    toggleMainHeader(fullscreenActive){
-        var t = document.querySelector('ks-main-navigation ks-main-header');
-        if (!t) {
-            return;
-        }
-        var navHeader = t.shadowRoot.querySelector('nav .navbar-header');
-        if (!navHeader) {
-            return;
-        }
+    toggleElements(element, node){
+        var isDisabled = element.hasAttribute('disable'),
+            isFullScreenMode = element.hasAttribute('ks-fullscreen-mode');
 
-        if (fullscreenActive) {
-            navHeader.style.display = "none";
+        element.toggleAttribute('ks-fullscreen-mode');
+        if(isDisabled) {
+            return;
+        }
+        if(isFullScreenMode){
+            node.removeAttribute('hidden');
         } else {
-            navHeader.style.display = "block";
+            node.setAttribute('hidden', '');
+        }
+    }
+    activateFullScreen(){
+        this.toggleAttribute('fullscreen-active');
+        var isFullScreenActive = this.hasAttribute('fullscreen-active');
+        this.fullscreen(isFullScreenActive);
+        if(isFullScreenActive){
+            this.toolTipTitle = this.closeTitle;
+        } else {
+            this.toolTipTitle = this.openTitle;
         }
     }
 }

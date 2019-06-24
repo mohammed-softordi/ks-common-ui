@@ -93,7 +93,7 @@ class KsMainFooter extends KsGlobalBehavior(PolymerElement) {
         </style>
 
         <!-- shadow DOM for your element -->
-        <footer class="footer ks-main-footer">
+        <footer class="footer ks-main-footer" hidden="[[hidden]]">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-2 col-sm-12 col-xs-12 float-right">

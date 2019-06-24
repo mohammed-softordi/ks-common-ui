@@ -91,10 +91,10 @@ class KsNavProfile extends KsGlobalBehavior(PolymerElement) {
             }
             
             @media (min-width: 992px) {
-                .sticky-header .user-account-menu,
-                .sticky-header[hidden] .user-account-menu {
-                    padding-right: 60px;
-                }
+                /*.sticky-header .user-account-menu,*/
+                /*.sticky-header[hidden] .user-account-menu {*/
+                /*    padding-right: 60px;*/
+                /*}*/
                 
                 [ks-fullscreen-mode] .sticky-header .user-account-menu,
                 [ks-fullscreen-mode] .sticky-header[hidden] .user-account-menu {

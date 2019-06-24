@@ -132,15 +132,16 @@ class KsMainNavigation extends KsStateBehavior(KsGlobalBehavior(PolymerElement))
     _onWindowScroll(event) {
         var mainHeaderBox = this.querySelector('[slot=main-header]').getBoundingClientRect();
         if (mainHeaderBox.top <= -mainHeaderBox.height && !this.isHeaderSticky) {
-            this.classList.add('sticky-header');
-            this.isHeaderSticky = true;
-            this.sticky(true);
+            this.stickyState('add', true)
         } else if (this.isHeaderSticky && mainHeaderBox.top >= -mainHeaderBox.height) {
-            this.classList.remove('sticky-header');
-            this.isHeaderSticky = false;
-            this.sticky(false);
+            this.stickyState('remove', false)
         }
+    }
 
+    stickyState(operation, state){
+        this.classList[operation]('sticky-header');
+        this.isHeaderSticky = state;
+        this.sticky(state);
     }
 
 }

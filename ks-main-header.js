@@ -99,7 +99,7 @@ class KsMainHeader extends  KsGlobalBehavior(KsStateBehavior(PolymerElement)) {
                 } 
             }
         </style>
-        <nav class="navbar navbar-default ks-main-header">
+        <nav class="navbar navbar-default ks-main-header" hidden="[[hidden]]">
             <div class="navbar-header" short-name$="{{shortName}}">
                 <a class="navbar-brand" href="{{siteUrl}}"></a>
                 {{siteName}}
