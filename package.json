@@ -1,6 +1,6 @@
 {
   "name": "ks-common-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ks-common-ui",
   "scripts":{
     "start": "gulp"
@@ -11,7 +11,7 @@
     "@polymer/polymer": "^3.0.0",
     "@webcomponents/webcomponentsjs": "^2.0.0",
     "bootstrap": "3.3.5",
-    "bootstrap-treeview": "https://github.com/mohammed-softordi/bootstrap-treeview/archive/v1.2.3.tar.gz",
+    "bootstrap-treeview": "https://github.com/mohammed-softordi/bootstrap-treeview/archive/v1.2.4.tar.gz",
     "fontawesome-icon": "^1.0.4",
     "growl": "^1.10.5",
     "jquery": "^3.3.1",
