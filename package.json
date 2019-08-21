@@ -1,8 +1,8 @@
 {
   "name": "ks-common-ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ks-common-ui",
-  "scripts":{
+  "scripts": {
     "start": "gulp"
   },
   "dependencies": {

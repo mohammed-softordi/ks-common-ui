@@ -1,0 +1,60 @@
+
+/* 
+The Scania Logotype Stylesheet
+The Scania symbol and wordmark should be used in accordance to the guidelines specified in the Brand Manual. 
+We do not want our logotype to be downloaded to local servers as updates to the logotype is made to these 
+centraly stored versions.
+
+How to use
+Include this stylesheet in you application by copying this line of code to your HEAD section:
+
+<link rel="stylesheet" type="text/css" href="https://static.scania.com/resources/logotype/scania/logotype-stylesheet/scania-logotype.css">
+
+Use these HTML tags to show the symbol and wordmark.
+<span class="scania wordmark"></span>
+<span class="scania symbol"></span>
+<span class="scania symbol neg"></span>  For a white wordmark
+<span class="scania logotype-vertical-lockup"></span>
+*/
+
+.scania .symbol, .scania.symbol {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('https://static.scania.com/resources/logotype/scania/scania-symbol.png');
+    background-image: url('https://static.scania.com/resources/logotype/scania/scania-symbol.svg'); 
+    background-repeat: no-repeat;
+    background-size: 48px 46px;
+    width: 48px;
+    height: 46px;   
+    float: left;
+    margin-bottom: 15px 
+}
+
+.scania .wordmark, .scania.wordmark {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('https://static.scania.com/resources/logotype/scania/scania-wordmark.png');
+    background-image: url('https://static.scania.com/resources/logotype/scania/scania-wordmark.svg'); 
+    background-repeat: no-repeat;
+    background-size: 169px 28px;
+    width: 169px;
+    height: 28px;
+}
+
+.scania .wordmark.neg, .scania.wordmark.neg {
+    background-image: url('https://static.scania.com/resources/logotype/scania/scania-wordmark-white.png');
+    background-image: url('https://static.scania.com/resources/logotype/scania/scania-wordmark-white.svg');  
+}
+
+/* Lockups of the symbol and wordmark should be used as an exeption only */
+
+.scania .logotype-vertical-lockup, .scania.logotype-vertical-lockup {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('https://static.scania.com/resources/logotype/scania/scania-logotype-vertical-lock-up.png');
+    background-image: url('https://static.scania.com/resources/logotype/scania/scania-logotype-vertical-lock-up.svg'); 
+    background-repeat: no-repeat;
+    background-size: 250px 141px;
+    width: 250px;
+    height: 141px;    
+}

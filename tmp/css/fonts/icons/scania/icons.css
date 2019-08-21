@@ -1,0 +1,1110 @@
+i[class*="scania-icon-"],
+span[class*="scania-icon-"] {
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: 54px;
+  width: 54px;
+  height: 54px;
+  margin: 5px;
+}
+i.xs,
+span.xs,
+i.sm,
+span.sm,
+i.md,
+span.md,
+i.lg,
+span.lg,
+i.xl,
+span.xl,
+i.xxl,
+span.xxl {
+  display: inline-block;
+}
+i.xs,
+span.xs {
+  background-size: 16px;
+  width: 16px;
+  height: 16px;
+  margin: 2px;
+}
+i.sm,
+span.sm {
+  background-size: 28px;
+  width: 28px;
+  height: 28px;
+  margin: 2px;
+}
+i.md,
+span.md {
+  background-size: 54px;
+  width: 54px;
+  height: 54px;
+  margin: 5px;
+}
+i.lg,
+span.lg {
+  background-size: 90px;
+  width: 90px;
+  height: 90px;
+  margin: 8px;
+}
+i.xl,
+span.xl {
+  background-size: 140px 140px;
+  width: 140px;
+  height: 140px;
+  padding: 10px;
+}
+i.xxl,
+span.xxl {
+  background-size: 240px;
+  width: 240px;
+  height: 240px;
+  padding: 10px;
+}
+i.scania-icon-find-a-dealer,
+span.scania-icon-find-a-dealer {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/01_Find_a_dealer-54-72px.svg');
+}
+i.scania-icon-search,
+span.scania-icon-search {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/02_Icon_search-54-72px.svg');
+}
+i.scania-icon-close-input,
+span.scania-icon-close-input {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/03_Search-desktop_in-field-delete-54-72px.svg');
+}
+i.scania-icon-search-mobile,
+span.scania-icon-search-mobile {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/04_Search-mobile_in-field-delete-54-72px.svg');
+}
+i.scania-icon-menu-mobile,
+span.scania-icon-menu-mobile {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/05_Menu_mobile-54-72px.svg');
+}
+i.scania-icon-close-mobile-menu,
+span.scania-icon-close-mobile-menu {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/06_Menu_close_button_Mobile-54-72px.svg');
+}
+i.scania-icon-menu-back-button,
+span.scania-icon-menu-back-button {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/07_Menu_back_button-54-72px.svg');
+}
+i.scania-icon-my-scania-mobile,
+span.scania-icon-my-scania-mobile {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/08_My_scania_Mobile-54-72px.svg');
+}
+i.scania-icon-share-social-media,
+span.scania-icon-share-social-media {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/09_Share_page_tool_share_icon-54-72px.svg');
+}
+i.scania-icon-share-page-tool,
+span.scania-icon-share-page-tool {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/10_Share_page_tool-54-72px.svg');
+}
+i.scania-icon-video-play,
+span.scania-icon-video-play {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/11_Video_play_icon-54-72px.svg');
+}
+i.scania-icon-find-a-dealer,
+span.scania-icon-find-a-dealer {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/12_Find_a_dealer_CTA-54-72px.svg');
+}
+i.scania-icon-open-accordian-plus,
+span.scania-icon-open-accordian-plus {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/13_Open_accordian_plus_Mobile-54-72px.svg');
+}
+i.scania-icon-close-accordian-minus,
+span.scania-icon-close-accordian-minus {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/14_Close_accordian_minus_icon_Mobile-54-72px.svg');
+}
+i.scania-icon-tick,
+span.scania-icon-tick {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/15_Tick_icon-54-72px.svg');
+}
+i.scania-icon-filter-dropdown,
+span.scania-icon-filter-dropdown {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/16_Filter_drop_down_icon-54-72px.svg');
+}
+i.scania-icon-dealer-locator-detect,
+span.scania-icon-dealer-locator-detect {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/17_Dealer_locator_Detect_location_54-72px.svg');
+}
+i.scania-icon-dealer-locator-map-pin,
+span.scania-icon-dealer-locator-map-pin {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/18_Dealer_locator_map_pin_filled-54-72px.svg');
+}
+i.scania-icon-dealer-locator-current,
+span.scania-icon-dealer-locator-current {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/19_Dealer_locator_Current_location_pin-54-72px.svg');
+}
+i.scania-icon-job-posting-location,
+span.scania-icon-job-posting-location {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/20_Job_posting_info_Location_generic-54-72px.svg');
+}
+i.scania-icon-job-posting-workarea,
+span.scania-icon-job-posting-workarea {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/21_Job_posting_info_Location_generic-54-72px.svg');
+}
+i.scania-icon-job-posting-closing-date,
+span.scania-icon-job-posting-closing-date {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/22_Closing_date-54-72px.svg');
+}
+i.scania-icon-email,
+span.scania-icon-email {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/23_E-mail_US-54-72px.svg');
+}
+i.scania-icon-dealer-website,
+span.scania-icon-dealer-website {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/24_View_dealer_website-54-72px.svg');
+}
+i.scania-icon-dealer-direction,
+span.scania-icon-dealer-direction {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/25_Dealer_key_actions_Get_directions_generic_54-72px.svg');
+}
+i.scania-icon-truck,
+span.scania-icon-truck {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/26_Truck-54-72px.svg');
+}
+i.scania-icon-engine,
+span.scania-icon-engine {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/27_Engine-54-72px.svg');
+}
+i.scania-icon-bus,
+span.scania-icon-bus {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/28_Bus-54-72px.svg');
+}
+i.scania-icon-boat,
+span.scania-icon-boat {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/29_Boat-54-72px.svg');
+}
+i.scania-icon-finance,
+span.scania-icon-finance {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/30_Finance-54-72px.svg');
+}
+i.scania-icon-conveyorbelt,
+span.scania-icon-conveyorbelt {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/31_Conveyorbelt_Machinery-54-72px.svg');
+}
+i.scania-icon-powergen,
+span.scania-icon-powergen {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/32_Powergen-54-72px.svg');
+}
+i.scania-icon-insurance,
+span.scania-icon-insurance {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/33_Insurance_risk_management-54-72px.svg');
+}
+i.scania-icon-repairs,
+span.scania-icon-repairs {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/34_Repairs-54-72px.svg');
+}
+i.scania-icon-connected-services,
+span.scania-icon-connected-services {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/35_Connected_services-54-72px.svg');
+}
+i.scania-icon-training-classroom,
+span.scania-icon-training-classroom {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/36_Training_Classroom-54-72px.svg');
+}
+i.scania-icon-bus-driver,
+span.scania-icon-bus-driver {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/37_Driver_Bus_driver-54-72px.svg');
+}
+i.scania-icon-business-operator,
+span.scania-icon-business-operator {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/38_Business_operator-54-72px.svg');
+}
+i.scania-icon-passenger,
+span.scania-icon-passenger {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/39_Passanger-54-72px.svg');
+}
+i.scania-icon-mechanic-technician,
+span.scania-icon-mechanic-technician {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/40_Mechanic_Technician-54-72px.svg');
+}
+i.scania-icon-concrete-mixer,
+span.scania-icon-concrete-mixer {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/42_Concrete_mixer-54-72px.svg');
+}
+i.scania-icon-truck-assembly-component,
+span.scania-icon-truck-assembly-component {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/43_Truck_assembly-54-72px.svg');
+}
+i.scania-icon-bus-application,
+span.scania-icon-bus-application {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/44_Bus_application-54-72px.svg');
+}
+i.scania-icon-engine-application,
+span.scania-icon-engine-application {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/45_Engine_application-54-72px.svg');
+}
+i.scania-icon-fuel-economy,
+span.scania-icon-fuel-economy {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/46_Fuel_economy-54-72px.svg');
+}
+i.scania-icon-sustainability,
+span.scania-icon-sustainability {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/47_Sustainabillity_Environment-54-72px.svg');
+}
+i.scania-icon-comfort-passenger,
+span.scania-icon-comfort-passenger {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/48_Comfort_Passanger_environment-54-72px.svg');
+}
+i.scania-icon-driver-omptimization,
+span.scania-icon-driver-omptimization {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/49_Driver_optimisation-54-72px.svg');
+}
+i.scania-icon-uptime,
+span.scania-icon-uptime {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/50_Uptime-54-72px.svg');
+}
+i.scania-icon-productivity,
+span.scania-icon-productivity {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/51_Productivity-54-72px.svg');
+}
+i.scania-icon-business-growth,
+span.scania-icon-business-growth {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/52_Business_growth-54-72px.svg');
+}
+i.scania-icon-efficiency,
+span.scania-icon-efficiency {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/53_Efficiency-54-72px.svg');
+}
+i.scania-icon-condition-roads,
+span.scania-icon-condition-roads {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/54_Conditions_roads-54-72px.svg');
+}
+i.scania-icon-safety,
+span.scania-icon-safety {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/55_Safety_54-72px.svg');
+}
+i.scania-icon-quality-engineering,
+span.scania-icon-quality-engineering {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/56_Quality_Engineering-54-72px.svg');
+}
+i.scania-icon-toe,
+span.scania-icon-toe {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/57_TOE-54-72px.svg');
+}
+i.scania-icon-alternative-fuels,
+span.scania-icon-alternative-fuels {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/58_Alternative_fuels-54-72px.svg');
+}
+i.scania-icon-tma,
+span.scania-icon-tma {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/59_TMA-54-72px.svg');
+}
+i.scania-icon-payload,
+span.scania-icon-payload {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/60_Payload-54-72px.svg');
+}
+i.scania-icon-driveability,
+span.scania-icon-driveability {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/61_Driveability-54-72px.svg');
+}
+i.scania-icon-ecolution-analysis,
+span.scania-icon-ecolution-analysis {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/62_Ecolution_analysis-54-72px.svg');
+}
+i.scania-icon-ecolution-solutions,
+span.scania-icon-ecolution-solutions {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/63_Ecolution_solutions-54-72px.svg');
+}
+i.scania-icon-ecolution-results,
+span.scania-icon-ecolution-results {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/64_Ecolution_results-54-72px.svg');
+}
+i.scania-icon-fuel-efficency,
+span.scania-icon-fuel-efficency {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/65_Fuel_efficency-54-72px.svg');
+}
+i.scania-icon-co2-emissions,
+span.scania-icon-co2-emissions {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/66_Co2_emissions-54-72px.svg');
+}
+i.scania-icon-miles-capacity,
+span.scania-icon-miles-capacity {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/67_Miles_capacity-54-72px.svg');
+}
+i.scania-icon-events,
+span.scania-icon-events {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/68_Events-54-72px.svg');
+}
+i.scania-icon-truck-assembly,
+span.scania-icon-truck-assembly {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/69_Truck_assembly-54-72px.svg');
+}
+i.scania-icon-waiting-time,
+span.scania-icon-waiting-time {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/70_Waiting-time-54-72px.svg');
+}
+i.scania-icon-explore,
+span.scania-icon-explore {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/71_Explore-54-72px.svg');
+}
+i.scania-icon-see-details,
+span.scania-icon-see-details {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/72_See details-54-72px.svg');
+}
+i.scania-icon-network-worldwide-open,
+span.scania-icon-network-worldwide-open {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/73_Scania_network_worldwide_open_24h-54-72px.svg');
+}
+i.scania-icon-warranty,
+span.scania-icon-warranty {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/74_Warranty-54-72px.svg');
+}
+i.scania-icon-gear-shift,
+span.scania-icon-gear-shift {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/75_Gear_shift-54-72px.svg');
+}
+i.scania-icon-knowledge,
+span.scania-icon-knowledge {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/76_Knowledge-54-72px.svg');
+}
+i.scania-icon-brake,
+span.scania-icon-brake {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/77_Brake-54-72px.svg');
+}
+i.scania-icon-social-media-facebook,
+span.scania-icon-social-media-facebook {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/78_Social_media_Facebook.svg');
+}
+i.scania-icon-social-media-flickr,
+span.scania-icon-social-media-flickr {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/78_Social_media_Flickr.svg');
+}
+i.scania-icon-social-media-googleplus,
+span.scania-icon-social-media-googleplus {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/78_Social_media_GooglePlus.svg');
+}
+i.scania-icon-social-media-instagram,
+span.scania-icon-social-media-instagram {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/78_Social_media_Instagram.svg');
+}
+i.scania-icon-social-media-linkedin,
+span.scania-icon-social-media-linkedin {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/78_Social_media_Linkedin.svg');
+}
+i.scania-icon-social-media-slideshare,
+span.scania-icon-social-media-slideshare {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/78_Social_media_SlideShare.svg');
+}
+i.scania-icon-social-media-twitter,
+span.scania-icon-social-media-twitter {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/78_Social_media_Twitter.svg');
+}
+i.scania-icon-social-media-youtube,
+span.scania-icon-social-media-youtube {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/78_Social_media_Youtube.svg');
+}
+i.scania-icon-social-media-youtube-variation-2,
+span.scania-icon-social-media-youtube-variation-2 {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/78_Social_media_Youtube_variation-2.svg');
+}
+i.scania-icon-save-download,
+span.scania-icon-save-download {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/84_Save-54-72px.svg');
+}
+i.scania-icon-emergency,
+span.scania-icon-emergency {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/79_Emergency_54-72px.svg');
+}
+i.scania-icon-time,
+span.scania-icon-time {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/80_Time-54-72px.svg');
+}
+i.scania-icon-battery,
+span.scania-icon-battery {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/81_Battery_54-72px.svg');
+}
+i.scania-icon-date,
+span.scania-icon-date {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/82_Date-54-72px.svg');
+}
+i.scania-icon-sound,
+span.scania-icon-sound {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/83_Sound-54-72px.svg');
+}
+i.scania-icon-no-photo,
+span.scania-icon-no-photo {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/92_No_photo-54-72px.svg');
+}
+i.scania-icon-no-smoking,
+span.scania-icon-no-smoking {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/93_No_smoking-54-72px.svg');
+}
+i.scania-icon-no-drugs-or-alcohol,
+span.scania-icon-no-drugs-or-alcohol {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/94_No_drugs_or_alcohol-54-72px.svg');
+}
+i.scania-icon-drivers-licence-required,
+span.scania-icon-drivers-licence-required {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/95_Drivers_licence_required-54-72px.svg');
+}
+i.scania-icon-forbidden-to-enter-course,
+span.scania-icon-forbidden-to-enter-course {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/96_Forbidden_to_enter_course-54-72px.svg');
+}
+i.scania-icon-wear-seatbelt,
+span.scania-icon-wear-seatbelt {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/97_Wear_seatbelt-54-72px.svg');
+}
+i.scania-icon-no-phone-during-driving,
+span.scania-icon-no-phone-during-driving {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/98_No_phone_during_driving-54-72px.svg');
+}
+i.scania-icon-listen-to-demo-driver,
+span.scania-icon-listen-to-demo-driver {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/99_Listen_to_demo_driver-54-72px.svg');
+}
+i.scania-icon-connected-services-bus,
+span.scania-icon-connected-services-bus {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/100_Connected_services_bus-54-72px.svg');
+}
+i.scania-icon-info-round,
+span.scania-icon-info-round {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/101_Info_round-54-72px.svg');
+}
+i.scania-icon-call-us,
+span.scania-icon-call-us {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/102_Call_us_54-72px.svg');
+}
+i.scania-icon-link,
+span.scania-icon-link {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/103_Link-icon-24-48px.svg');
+}
+i.scania-icon-truck-configurator,
+span.scania-icon-truck-configurator {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/104_Truck-configurator-24-48px.svg');
+}
+i.scania-icon-change,
+span.scania-icon-change {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/105_Change-24-48px.svg');
+}
+i.scania-icon-edit,
+span.scania-icon-edit {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/106_Edit-24-48px.svg');
+}
+i.scania-icon-conversation,
+span.scania-icon-conversation {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/107_Conversation-24-48px.svg');
+}
+i.scania-icon-settings,
+span.scania-icon-settings {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/108_Settings-24-48px.svg');
+}
+i.scania-icon-box,
+span.scania-icon-box {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/Box_24_48px.svg');
+}
+i.scania-icon-crane,
+span.scania-icon-crane {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/Crane-24-48px.svg');
+}
+i.scania-icon-fifth-wheel,
+span.scania-icon-fifth-wheel {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/Fifth_wheel-24-48px.svg');
+}
+i.scania-icon-fire-engine,
+span.scania-icon-fire-engine {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/Fire_engine-24-48px.svg');
+}
+i.scania-icon-hook-lift,
+span.scania-icon-hook-lift {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/Hook_lift-24-48px.svg');
+}
+i.scania-icon-recovery-body,
+span.scania-icon-recovery-body {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/Recovery_body-24-48px.svg');
+}
+i.scania-icon-refuse-collection-body,
+span.scania-icon-refuse-collection-body {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/Refuse_collection_body-24-48px.svg');
+}
+i.scania-icon-tail-lift,
+span.scania-icon-tail-lift {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/Tail_lift-24-48px.svg');
+}
+i.scania-icon-tank-body,
+span.scania-icon-tank-body {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/Tank_body-24-48px.svg');
+}
+i.scania-icon-timber-body,
+span.scania-icon-timber-body {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/Timber_body-24-48px.svg');
+}
+i.scania-icon-tipper_body,
+span.scania-icon-tipper_body {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/Tipper_body-24-48px.svg');
+}
+i.scania-icon-trailer,
+span.scania-icon-trailer {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/Trailer-24-48px.svg');
+}
+i.scania-icon-vehicle-transport-body,
+span.scania-icon-vehicle-transport-body {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/Vehicle_transport_body-24-48px.svg');
+}
+i.scania-icon-truck-service,
+span.scania-icon-truck-service {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/01_SIS_Truck_service-54-72px.svg');
+}
+i.scania-icon-bus-service,
+span.scania-icon-bus-service {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/02_SIS_Bus_service-54-72px.svg');
+}
+i.scania-icon-engine-service,
+span.scania-icon-engine-service {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/03_SIS_Engines_service-54-72px.svg');
+}
+i.scania-icon-marine-engine-service,
+span.scania-icon-marine-engine-service {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/04_SIS_Marine_engine_service-54-72px.svg');
+}
+i.scania-icon-genstes-service,
+span.scania-icon-genstes-service {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/05_SIS_Scania_gensets_service-54-72px.svg');
+}
+i.scania-icon-24h-breakdown-service,
+span.scania-icon-24h-breakdown-service {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/06_SIS_24h_emergency_breakdown_service-54-72px.svg');
+}
+i.scania-icon-accident-repairs,
+span.scania-icon-accident-repairs {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/07_SIS_Accident_repairs-54-72px.svg');
+}
+i.scania-icon-towing-recovery-service,
+span.scania-icon-towing-recovery-service {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/08_SIS_Towing_and_recovery_service-54-72px.svg');
+}
+i.scania-icon-toll-collect-recivery-service,
+span.scania-icon-toll-collect-recivery-service {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/09_SIS_Toll_collect_and_recovery_service-54-72px.svg');
+}
+i.scania-icon-tyre-service,
+span.scania-icon-tyre-service {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/10_SIS_Tyre_service-54-72px.svg');
+}
+i.scania-icon-vehicle-washing,
+span.scania-icon-vehicle-washing {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/11_SIS_Vehicle_washing-54-72px.svg');
+}
+i.scania-icon-vehicle-rental,
+span.scania-icon-vehicle-rental {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/12_SIS_Vehicle_rental-54-72px.svg');
+}
+i.scania-icon-truck-sales,
+span.scania-icon-truck-sales {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/13_SIS_Truck_sales-54-72px.svg');
+}
+i.scania-icon-bus-sales,
+span.scania-icon-bus-sales {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/14_SIS_Bus_sales-54-72px.svg');
+}
+i.scania-icon-power-engine-sales,
+span.scania-icon-power-engine-sales {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/15_SIS_Power_generation_engine_sales-54-72px.svg');
+}
+i.scania-icon-marine-engine-sales,
+span.scania-icon-marine-engine-sales {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/16_SIS_Marine_engine_sales-54-72px.svg');
+}
+i.scania-icon-genstes-sales,
+span.scania-icon-genstes-sales {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/17_SIS_Scania_gensets_sales-54-72px.svg');
+}
+i.scania-icon-parts-sales,
+span.scania-icon-parts-sales {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/18_SIS_Scania_parts_sales-54-72px.svg');
+}
+i.scania-icon-digital-tachograph-download,
+span.scania-icon-digital-tachograph-download {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/19_SIS_Digital_tachograph_data_download-54-72px.svg');
+}
+i.scania-icon-digital-tachograph-inspection,
+span.scania-icon-digital-tachograph-inspection {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/20_SIS_Digital_tachograph_inspection_and_repairs-54-72px.svg');
+}
+i.scania-icon-analogue-tachograph-inspection,
+span.scania-icon-analogue-tachograph-inspection {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/21_SIS_Analogue_tachograph_inspection_and_repairs-54-72px.svg');
+}
+i.scania-icon-roller-brake-test,
+span.scania-icon-roller-brake-test {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/22_SIS_Roller_brake_test-54-72px.svg');
+}
+i.scania-icon-trailer-service,
+span.scania-icon-trailer-service {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/23_SIS_Trailer_service-54-72px.svg');
+}
+i.scania-icon-refrigeration-service,
+span.scania-icon-refrigeration-service {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/24_SIS_Transport_refrigeration_unit_service-54-72px.svg');
+}
+i.scania-icon-tarpaulin-service,
+span.scania-icon-tarpaulin-service {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/25_SIS_Tarpaulin_service-54-72px.svg');
+}
+i.scania-icon-adr-service,
+span.scania-icon-adr-service {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/26_SIS_ADR_Vehicle_service-54-72px.svg');
+}
+i.scania-icon-hydraulics-service,
+span.scania-icon-hydraulics-service {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/27_SIS_Hydraulics_bodywork_service-54-72px.svg');
+}
+i.scania-icon-used-vehicle-sales,
+span.scania-icon-used-vehicle-sales {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/28_SIS_Used_vehicle_sales-54-72px.svg');
+}
+i.scania-icon-mining-service,
+span.scania-icon-mining-service {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/29_SIS_Mining_service-54-72px.svg');
+}
+i.scania-icon-mining-sales,
+span.scania-icon-mining-sales {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/30_SIS_Mining_sales-54-72px.svg');
+}
+i.scania-icon-tail-lift-service,
+span.scania-icon-tail-lift-service {
+  background-image: url('https://static.scania.com/resources/icons/scania/sis-icons/SVG_POS/31_SIS_Tail_lift_service-54-72px.svg');
+}
+i.scania-icon-fixed-price-repairs,
+span.scania-icon-fixed-price-repairs {
+  background-image: url('https://static.scania.com/resources/icons/scania/products-services/SVG_POS/01_Fixed_price_repairs_24-48px.svg');
+}
+i.scania-icon-service_exchange,
+span.scania-icon-service_exchange {
+  background-image: url('https://static.scania.com/resources/icons/scania/products-services/SVG_POS/02_Service_exchange_24-48px.svg');
+}
+i.neg.scania-icon-find-a-dealer,
+span.neg.scania-icon-find-a-dealer {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/01_Find_a_dealer-54-72px_neg.svg');
+}
+i.neg.scania-icon-search,
+span.neg.scania-icon-search {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/02_Icon_search-54-72px_neg.svg');
+}
+i.neg.scania-icon-close-input,
+span.neg.scania-icon-close-input {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/03_Search-desktop_in-field-delete-54-72px_neg.svg');
+}
+i.neg.scania-icon-search-mobile,
+span.neg.scania-icon-search-mobile {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/04_Search-mobile_in-field-delete-54-72px_neg.svg');
+}
+i.neg.scania-icon-menu-mobile,
+span.neg.scania-icon-menu-mobile {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/05_Menu_mobile-54-72px_neg.svg');
+}
+i.neg.scania-icon-close-mobile-menu,
+span.neg.scania-icon-close-mobile-menu {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/06_Menu_close_button_Mobile-54-72px_neg.svg');
+}
+i.neg.scania-icon-menu-back-button,
+span.neg.scania-icon-menu-back-button {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/07_Menu_back_button-54-72px_neg.svg');
+}
+i.neg.scania-icon-my-scania-mobile,
+span.neg.scania-icon-my-scania-mobile {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/08_My_scania_Mobile-54-72px_neg.svg');
+}
+i.neg.scania-icon-share-social-media,
+span.neg.scania-icon-share-social-media {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/09_Share_page_tool_share_icon-54-72px_neg.svg');
+}
+i.neg.scania-icon-share-page-tool,
+span.neg.scania-icon-share-page-tool {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/10_Share_page_tool-54-72px_neg.svg');
+}
+i.neg.scania-icon-video-play,
+span.neg.scania-icon-video-play {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/11_Video_play_icon-54-72px_neg.svg');
+}
+i.neg.scania-icon-find-a-dealer,
+span.neg.scania-icon-find-a-dealer {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/12_Find_a_dealer_CTA-54-72px_neg.svg');
+}
+i.neg.scania-icon-open-accordian-plus,
+span.neg.scania-icon-open-accordian-plus {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/13_Open_accordian_plus_Mobile-54-72px_neg.svg');
+}
+i.neg.scania-icon-close-accordian-minus,
+span.neg.scania-icon-close-accordian-minus {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/14_Close_accordian_minus_icon_Mobile-54-72px_neg.svg');
+}
+i.neg.scania-icon-tick,
+span.neg.scania-icon-tick {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/15_Tick_icon-54-72px_neg.svg');
+}
+i.neg.scania-icon-filter-dropdown,
+span.neg.scania-icon-filter-dropdown {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/16_Filter_drop_down_icon-54-72px_neg.svg');
+}
+i.neg.scania-icon-dealer-locator-detect,
+span.neg.scania-icon-dealer-locator-detect {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/17_Dealer_locator_Detect_location_54-72px_neg.svg');
+}
+i.neg.scania-icon-dealer-locator-map-pin,
+span.neg.scania-icon-dealer-locator-map-pin {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/18_Dealer_locator_map_pin_filled-54-72px_neg.svg');
+}
+i.neg.scania-icon-dealer-locator-current,
+span.neg.scania-icon-dealer-locator-current {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/19_Dealer_locator_Current_location_pin-54-72px_neg.svg');
+}
+i.neg.scania-icon-job-posting-location,
+span.neg.scania-icon-job-posting-location {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/20_Job_posting_info_Location_generic-54-72px_neg.svg');
+}
+i.neg.scania-icon-job-posting-workarea,
+span.neg.scania-icon-job-posting-workarea {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/21_Job_posting_info_Location_generic-54-72px_neg.svg');
+}
+i.neg.scania-icon-job-posting-closing-date,
+span.neg.scania-icon-job-posting-closing-date {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/22_Closing_date-54-72px_neg.svg');
+}
+i.neg.scania-icon-email,
+span.neg.scania-icon-email {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/23_E-mail_US-54-72px_neg.svg');
+}
+i.neg.scania-icon-dealer-website,
+span.neg.scania-icon-dealer-website {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/24_View_dealer_website-54-72px_neg.svg');
+}
+i.neg.scania-icon-dealer-direction,
+span.neg.scania-icon-dealer-direction {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/25_Dealer_key_actions_Get_directions_generic_54-72px_neg.svg');
+}
+i.neg.scania-icon-truck,
+span.neg.scania-icon-truck {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/26_Truck-54-72px_neg.svg');
+}
+i.neg.scania-icon-engine,
+span.neg.scania-icon-engine {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/27_Engine-54-72px_neg.svg');
+}
+i.neg.scania-icon-bus,
+span.neg.scania-icon-bus {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/28_Bus-54-72px_neg.svg');
+}
+i.neg.scania-icon-boat,
+span.neg.scania-icon-boat {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/29_Boat-54-72px_neg.svg');
+}
+i.neg.scania-icon-finance,
+span.neg.scania-icon-finance {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/30_Finance-54-72px_neg.svg');
+}
+i.neg.scania-icon-conveyorbelt,
+span.neg.scania-icon-conveyorbelt {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/31_Conveyorbelt_Machinery-54-72px_neg.svg');
+}
+i.neg.scania-icon-powergen,
+span.neg.scania-icon-powergen {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/32_Powergen-54-72px_neg.svg');
+}
+i.neg.scania-icon-insurance,
+span.neg.scania-icon-insurance {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/33_Insurance_risk_management-54-72px_neg.svg');
+}
+i.neg.scania-icon-repairs,
+span.neg.scania-icon-repairs {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/34_Repairs-54-72px_neg.svg');
+}
+i.neg.scania-icon-connected-services,
+span.neg.scania-icon-connected-services {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/35_Connected_services-54-72px_neg.svg');
+}
+i.neg.scania-icon-training-classroom,
+span.neg.scania-icon-training-classroom {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/36_Training_Classroom-54-72px_neg.svg');
+}
+i.neg.scania-icon-bus-driver,
+span.neg.scania-icon-bus-driver {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/37_Driver_Bus_driver-54-72px_neg.svg');
+}
+i.neg.scania-icon-business-operator,
+span.neg.scania-icon-business-operator {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/38_Business_operator-54-72px_neg.svg');
+}
+i.neg.scania-icon-passenger,
+span.neg.scania-icon-passenger {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/39_Passanger-54-72px_neg.svg');
+}
+i.neg.scania-icon-mechanic-technician,
+span.neg.scania-icon-mechanic-technician {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/40_Mechanic_Technician-54-72px_neg.svg');
+}
+i.neg.scania-icon-concrete-mixer,
+span.neg.scania-icon-concrete-mixer {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/42_Concrete_mixer-54-72px_neg.svg');
+}
+i.neg.scania-icon-truck-assembly-component,
+span.neg.scania-icon-truck-assembly-component {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/43_Truck_assembly-54-72px_neg.svg');
+}
+i.neg.scania-icon-bus-application,
+span.neg.scania-icon-bus-application {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/44_Bus_application-54-72px_neg.svg');
+}
+i.neg.scania-icon-engine-application,
+span.neg.scania-icon-engine-application {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/45_Engine_application-54-72px_neg.svg');
+}
+i.neg.scania-icon-fuel-economy,
+span.neg.scania-icon-fuel-economy {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/46_Fuel_economy-54-72px_neg.svg');
+}
+i.neg.scania-icon-sustainability,
+span.neg.scania-icon-sustainability {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/47_Sustainabillity_Environment-54-72px_neg.svg');
+}
+i.neg.scania-icon-comfort-passenger,
+span.neg.scania-icon-comfort-passenger {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/48_Comfort_Passanger_environment-54-72px_neg.svg');
+}
+i.neg.scania-icon-driver-omptimization,
+span.neg.scania-icon-driver-omptimization {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/49_Driver_optimisation-54-72px_neg.svg');
+}
+i.neg.scania-icon-uptime,
+span.neg.scania-icon-uptime {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/50_Uptime-54-72px_neg.svg');
+}
+i.neg.scania-icon-productivity,
+span.neg.scania-icon-productivity {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/51_Productivity-54-72px_neg.svg');
+}
+i.neg.scania-icon-business-growth,
+span.neg.scania-icon-business-growth {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/52_Business_growth-54-72px_neg.svg');
+}
+i.neg.scania-icon-efficiency,
+span.neg.scania-icon-efficiency {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/53_Efficiency-54-72px_neg.svg');
+}
+i.neg.scania-icon-condition-roads,
+span.neg.scania-icon-condition-roads {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/54_Conditions_roads-54-72px_neg.svg');
+}
+i.neg.scania-icon-safety,
+span.neg.scania-icon-safety {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/55_Safety_54-72px_neg.svg');
+}
+i.neg.scania-icon-quality-engineering,
+span.neg.scania-icon-quality-engineering {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/56_Quality_Engineering-54-72px_neg.svg');
+}
+i.neg.scania-icon-toe,
+span.neg.scania-icon-toe {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/57_TOE-54-72px_neg.svg');
+}
+i.neg.scania-icon-alternative-fuels,
+span.neg.scania-icon-alternative-fuels {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/58_Alternative_fuels-54-72px_neg.svg');
+}
+i.neg.scania-icon-tma,
+span.neg.scania-icon-tma {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/59_TMA-54-72px_neg.svg');
+}
+i.neg.scania-icon-payload,
+span.neg.scania-icon-payload {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/60_Payload-54-72px_neg.svg');
+}
+i.neg.scania-icon-driveability,
+span.neg.scania-icon-driveability {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/61_Driveability-54-72px_neg.svg');
+}
+i.neg.scania-icon-ecolution-analysis,
+span.neg.scania-icon-ecolution-analysis {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/62_Ecolution_analysis-54-72px_neg.svg');
+}
+i.neg.scania-icon-ecolution-solutions,
+span.neg.scania-icon-ecolution-solutions {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/63_Ecolution_solutions-54-72px_neg.svg');
+}
+i.neg.scania-icon-ecolution-results,
+span.neg.scania-icon-ecolution-results {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/64_Ecolution_results-54-72px_neg.svg');
+}
+i.neg.scania-icon-fuel-efficency,
+span.neg.scania-icon-fuel-efficency {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/65_Fuel_efficency-54-72px_neg.svg');
+}
+i.neg.scania-icon-co2-emissions,
+span.neg.scania-icon-co2-emissions {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/66_Co2_emissions-54-72px_neg.svg');
+}
+i.neg.scania-icon-miles-capacity,
+span.neg.scania-icon-miles-capacity {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/67_Miles_capacity-54-72px_neg.svg');
+}
+i.neg.scania-icon-events,
+span.neg.scania-icon-events {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/68_Events-54-72px_neg.svg');
+}
+i.neg.scania-icon-truck-assembly,
+span.neg.scania-icon-truck-assembly {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/69_Truck_assembly-54-72px_neg.svg');
+}
+i.neg.scania-icon-waiting-time,
+span.neg.scania-icon-waiting-time {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/70_Waiting-time-54-72px_neg.svg');
+}
+i.neg.scania-icon-explore,
+span.neg.scania-icon-explore {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/71_Explore-54-72px_neg.svg');
+}
+i.neg.scania-icon-see-details,
+span.neg.scania-icon-see-details {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/72_See details-54-72px_neg.svg');
+}
+i.neg.scania-icon-network-worldwide-open,
+span.neg.scania-icon-network-worldwide-open {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/73_Scania_network_worldwide_open_24h-54-72px_neg.svg');
+}
+i.neg.scania-icon-warranty,
+span.neg.scania-icon-warranty {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/74_Warranty-54-72px_neg.svg');
+}
+i.neg.scania-icon-gear-shift,
+span.neg.scania-icon-gear-shift {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/75_Gear_shift-54-72px_neg.svg');
+}
+i.neg.scania-icon-knowledge,
+span.neg.scania-icon-knowledge {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/76_Knowledge-54-72px_neg.svg');
+}
+i.neg.scania-icon-brake,
+span.neg.scania-icon-brake {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/77_Brake-54-72px_neg.svg');
+}
+i.neg.scania-icon-social-media-facebook,
+span.neg.scania-icon-social-media-facebook {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/78_Social_media_Facebook_neg.svg');
+}
+i.neg.scania-icon-social-media-flickr,
+span.neg.scania-icon-social-media-flickr {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/78_Social_media_Flickr_neg.svg');
+}
+i.neg.scania-icon-social-media-googleplus,
+span.neg.scania-icon-social-media-googleplus {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/78_Social_media_GooglePlus_neg.svg');
+}
+i.neg.scania-icon-social-media-instagram,
+span.neg.scania-icon-social-media-instagram {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/78_Social_media_Instagram_neg.svg');
+}
+i.neg.scania-icon-social-media-linkedin,
+span.neg.scania-icon-social-media-linkedin {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/78_Social_media_Linkedin_neg.svg');
+}
+i.neg.scania-icon-social-media-slideshare,
+span.neg.scania-icon-social-media-slideshare {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/78_Social_media_SlideShare_neg.svg');
+}
+i.neg.scania-icon-social-media-twitter,
+span.neg.scania-icon-social-media-twitter {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/78_Social_media_Twitter_neg.svg');
+}
+i.neg.scania-icon-social-media-youtube,
+span.neg.scania-icon-social-media-youtube {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/78_Social_media_Youtube_neg.svg');
+}
+i.neg.scania-icon-social-media-youtube-variation-2,
+span.neg.scania-icon-social-media-youtube-variation-2 {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/78_Social_media_Youtube_variation-2_neg.svg');
+}
+i.neg.scania-icon-save-download,
+span.neg.scania-icon-save-download {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/84_Save-54-72px_neg.svg');
+}
+i.neg.scania-icon-emergency,
+span.neg.scania-icon-emergency {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/79_Emergency_54-72px_neg.svg');
+}
+i.neg.scania-icon-time,
+span.neg.scania-icon-time {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/80_Time-54-72px_neg.svg');
+}
+i.neg.scania-icon-battery,
+span.neg.scania-icon-battery {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/81_Battery_54-72px_neg.svg');
+}
+i.neg.scania-icon-date,
+span.neg.scania-icon-date {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/82_Date-54-72px_neg.svg');
+}
+i.neg.scania-icon-sound,
+span.neg.scania-icon-sound {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/83_Sound-54-72px_neg.svg');
+}
+i.neg.scania-icon-no-photo,
+span.neg.scania-icon-no-photo {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/92_No_photo-54-72px_neg.svg');
+}
+i.neg.scania-icon-no-smoking,
+span.neg.scania-icon-no-smoking {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/93_No_smoking-54-72px_neg.svg');
+}
+i.neg.scania-icon-no-drugs-or-alcohol,
+span.neg.scania-icon-no-drugs-or-alcohol {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/94_No_drugs_or_alcohol-54-72px_neg.svg');
+}
+i.neg.scania-icon-drivers-licence-required,
+span.neg.scania-icon-drivers-licence-required {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/95_Drivers_licence_required-54-72px_neg.svg');
+}
+i.neg.scania-icon-forbidden-to-enter-course,
+span.neg.scania-icon-forbidden-to-enter-course {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/96_Forbidden_to_enter_course-54-72px_neg.svg');
+}
+i.neg.scania-icon-wear-seatbelt,
+span.neg.scania-icon-wear-seatbelt {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/97_Wear_seatbelt-54-72px_neg.svg');
+}
+i.neg.scania-icon-no-phone-during-driving,
+span.neg.scania-icon-no-phone-during-driving {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/98_No_phone_during_driving-54-72px_neg.svg');
+}
+i.neg.scania-icon-listen-to-demo-driver,
+span.neg.scania-icon-listen-to-demo-driver {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/99_Listen_to_demo_driver-54-72px_neg.svg');
+}
+i.neg.scania-icon-connected-services-bus,
+span.neg.scania-icon-connected-services-bus {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/100_Connected_services_bus-54-72px_neg.svg');
+}
+i.neg.scania-icon-info-round,
+span.neg.scania-icon-info-round {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/101_Info_round-54-72px_neg.svg');
+}
+i.neg.scania-icon-call-us,
+span.neg.scania-icon-call-us {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/102_Call_us_54-72px_neg.svg');
+}
+i.neg.scania-icon-link,
+span.neg.scania-icon-link {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_NEG/103_Link-icon-24-48px_neg.svg');
+}
+i.neg.scania-icon-fixed-price-repairs,
+span.neg.scania-icon-fixed-price-repairs {
+  background-image: url('https://static.scania.com/resources/icons/scania/products-services/SVG_NEG/01_Fixed_price_repairs_24-48px_neg.svg');
+}
+i.neg.scania-icon-service_exchange,
+span.neg.scania-icon-service_exchange {
+  background-image: url('https://static.scania.com/resources/icons/scania/products-services/SVG_NEG/02_Service_exchange_24-48px_neg.svg');
+}
+i.active.scania-icon-dealer-locator-detect,
+span.active.scania-icon-dealer-locator-detect {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/17_Dealer_locator_Detect_location_54-72px-Active.svg');
+}
+i.scania-truck-configurator,
+span.scania-truck-configurator {
+  background-image: url('https://static.scania.com/resources/icons/scania/SVG_POS/104_Truck-configurator-24-48px.svg');
+}

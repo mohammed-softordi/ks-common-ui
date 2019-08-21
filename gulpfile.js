@@ -29,6 +29,7 @@ gulp.task('fetch-font-awesome-pro', function() {
         .pipe(gulp.dest(basePathAssetsCss + '/font-awesome/src'))
         .pipe(gulp.src(basePathAssetsCss + '/font-awesome/src/**/*.css'))
         .pipe(concat('font-awesome.css'))
+        .pipe(replace('\.\./' , 'https://d31jnweo1ynb8u.cloudfront.net/resources/icons/font-awesome/5.3.1/'))
         .pipe(gulp.dest(basePathAssetsCss +'/font-awesome/dist/'));;
 });
 
@@ -52,6 +53,7 @@ gulp.task('fetch-scania-fonts', function () {
         base: 'https://static.scania.com/resources/'
     })
         .pipe(replace('\'/resources/' , '\'https://static.scania.com/resources/'))
+        .pipe(replace('ScaniaSans' , 'https://static.scania.com/resources/fonts/scania-sans/ScaniaSans'))
         .pipe(gulp.dest('./tmp/css/fonts/'))
         .pipe(gulp.src('./tmp/css/fonts/**/*.css'))
         .pipe(concat('corporate-ui-fonts.css'))

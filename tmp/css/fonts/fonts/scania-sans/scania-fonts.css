@@ -1,0 +1,182 @@
+@import url("/resources/fonts/scania-sans/cyrillic/scania-cyrillic-fonts.css");
+
+@font-face {
+  font-family: 'Scania Sans';
+  font-weight: normal;
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Regular.eot");
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Regular.eot?#iefix") format("embedded-opentype"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Regular.woff2") format("woff2"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Regular.woff") format("woff"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Scania Sans';
+  font-weight: bold;
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Bold.eot");
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Bold.eot?#iefix") format("embedded-opentype"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Bold.woff2") format("woff2"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Bold.woff") format("woff"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Scania Sans Bold';
+  font-weight: normal;
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Bold.eot");
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Bold.eot?#iefix") format("embedded-opentype"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Bold.woff2") format("woff2"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Bold.woff") format("woff"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Scania Sans';
+  font-style: italic;
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Italic.eot");
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Italic.eot?#iefix") format("embedded-opentype"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Italic.woff2") format("woff2"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Italic.woff") format("woff"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Scania Sans Italic';
+  font-weight: normal;
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Italic.eot");
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Italic.eot?#iefix") format("embedded-opentype"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Italic.woff2") format("woff2"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Italic.woff") format("woff"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Scania Sans Headline';
+  font-weight: normal;
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansHeadline-Regular.eot");
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansHeadline-Regular.eot?#iefix") format("embedded-opentype"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansHeadline-Regular.woff2") format("woff2"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansHeadline-Regular.woff") format("woff"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansHeadline-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Scania Sans Headline';
+  font-weight: bold;
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansHeadline-Bold.eot");
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansHeadline-Bold.eot?#iefix") format("embedded-opentype"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansHeadline-Bold.woff2") format("woff2"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansHeadline-Bold.woff") format("woff"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Scania Sans Headline Bold';
+  font-weight: normal;
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansHeadline-Bold.eot");
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansHeadline-Bold.eot?#iefix") format("embedded-opentype"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansHeadline-Bold.woff2") format("woff2"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansHeadline-Bold.woff") format("woff"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Bold.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: 'Scania Sans Semi Condensed';
+  font-weight: normal;
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansSemiCondensed-Regular.eot");
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansSemiCondensed-Regular.eot?#iefix") format("embedded-opentype"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansSemiCondensed-Regular.woff2") format("woff2"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansSemiCondensed-Regular.woff") format("woff"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansSemiCondensed-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Scania Sans Semi Condensed';
+  font-weight: bold;
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansSemiCondensed-Bold.eot");
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansSemiCondensed-Bold.eot?#iefix") format("embedded-opentype"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansSemiCondensed-Bold.woff2") format("woff2"),
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansSemiCondensed-Bold.woff") format("woff"),
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Scania Sans Semi Condensed Bold';
+  font-weight: normal;
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansSemiCondensed-Bold.eot");
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansSemiCondensed-Bold.eot?#iefix") format("embedded-opentype"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansSemiCondensed-Bold.woff2") format("woff2"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansSemiCondensed-Bold.woff") format("woff"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Scania Sans Semi Condensed';
+  font-style: italic;
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansSemiCondensed-Italic.eot");
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansSemiCondensed-Italic.eot?#iefix") format("embedded-opentype"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansSemiCondensed-Italic.woff2") format("woff2"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansSemiCondensed-Italic.woff") format("woff"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansSemiCondensed-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Scania Sans Semi Condensed Italic';
+  font-weight: normal;
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansSemiCondensed-Italic.eot");
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansSemiCondensed-Italic.eot?#iefix") format("embedded-opentype"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansSemiCondensed-Italic.woff2") format("woff2"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansSemiCondensed-Italic.woff") format("woff"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansSemiCondensed-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Scania Sans Condensed';
+  font-weight: normal;
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansCondensed-Regular.eot");
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansCondensed-Regular.eot?#iefix") format("embedded-opentype"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansCondensed-Regular.woff2") format("woff2"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansCondensed-Regular.woff") format("woff"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansCondensed-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Scania Sans Condensed';
+  font-weight: bold;
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansCondensed-Bold.eot");
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansCondensed-Bold.eot?#iefix") format("embedded-opentype"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansCondensed-Bold.woff2") format("woff2"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansCondensed-Bold.woff") format("woff"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Scania Sans Condensed Bold';
+  font-weight: normal;
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansCondensed-Bold.eot");
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansCondensed-Bold.eot?#iefix") format("embedded-opentype"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansCondensed-Bold.woff2") format("woff2"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansCondensed-Bold.woff") format("woff"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Scania Sans Condensed';
+  font-style: italic;
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansCondensed-Italic.eot");
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansCondensed-Italic.eot?#iefix") format("embedded-opentype"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansCondensed-Italic.woff2") format("woff2"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansCondensed-Italic.woff") format("woff"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansCondensed-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Scania Sans Condensed Italic';
+  font-weight: normal;
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansCondensed-Italic.eot");
+  src: url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansCondensed-Italic.eot?#iefix") format("embedded-opentype"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansCondensed-Italic.woff2") format("woff2"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansCondensed-Italic.woff") format("woff"), 
+  url("https://static.scania.com/resources/fonts/scania-sans/ScaniaSansCondensed-Italic.ttf") format("truetype");
+}
