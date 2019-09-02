@@ -2,7 +2,6 @@
 .idea/
 .languages-tmp/
 .language-delivery/
-dist/
 api-docs-temp/
 node_modules/
 cukes-pro/reports/
