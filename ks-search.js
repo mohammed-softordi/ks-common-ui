@@ -5,7 +5,7 @@ import 'fontawesome-icon/fontawesome-icon';
 import './assets/js/corporate-ui/corporate-ui-vendors'
 import './assets/js/corporate-ui/corporate-ui';
 
-
+import './ks-shared-styles';
 
 /**
  * `ks-search`
@@ -27,11 +27,16 @@ class KsSearch extends PolymerElement {
             .clear-input {
                 cursor: pointer;
             }
+            .form-control {
+                height: 42px;
+            }
 
         </style>
         <div class="form-group sc-search">
             <div class="input-group">
-                <input id="ksSearch" value="{{value::input}}" class="form-control" type="text" on-focus="toggleIcon" on-input="toggleIcon"/>
+                <input id="ksSearch" value="{{value::input}}" class="form-control" 
+                        type="text" on-focus="toggleIcon" on-input="toggleIcon" 
+                        placeholder="{{placeholder::input}}"/>
                 <div class="input-icon">
                     <template is="dom-if" if="[[showClearIcon]]">
                         <span on-click="clearInput" class="clear-input">
@@ -44,7 +49,7 @@ class KsSearch extends PolymerElement {
                 </div>
             </div>
         </div>
-        <div style="background-color: gray"> Value received in <span style="font-style: normal">ks-search</span> the custom element : [[value]]</div>
+<!--        <div style="background-color: gray"> Value received in <span style="font-style: normal">ks-search</span> the custom element : [[value]]</div>-->
         `;
     }
     constructor() {
@@ -75,11 +80,11 @@ class KsSearch extends PolymerElement {
 
     ready() {
         super.ready();
-        let placeholder = 'Scs_Core.Filtrera';
-        if (this.iconClass === 'fa-search') {
-            placeholder = 'Scs_Core.Sök';
-        }
-        this.$.ksSearch.setAttribute('placeholder', placeholder);
+        // let placeholder = 'Scs_Core.Filtrera';
+        // if (this.iconClass === 'fa-search') {
+        //     placeholder = 'Scs_Core.Sök';
+        // }
+        // this.$.ksSearch.setAttribute('placeholder', placeholder);
         this.toggleIcon();
     }
 
