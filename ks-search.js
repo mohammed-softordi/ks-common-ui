@@ -1,7 +1,7 @@
 import {html, PolymerElement} from '@polymer/polymer/polymer-element';
 import {DomIf as DomIf} from '@polymer/polymer/lib/elements/dom-if';
 import 'polymer3-granite-bootstrap/granite-bootstrap-min';
-import 'fontawesome-icon/fontawesome-icon';
+import './assets/js/font-awesome/font-awesome';
 import './assets/js/corporate-ui/corporate-ui-vendors'
 import './assets/js/corporate-ui/corporate-ui';
 
@@ -19,18 +19,29 @@ class KsSearch extends PolymerElement {
     static get template() {
         return html`
         <style include="granite-bootstrap-min"></style>
+        <style include="font-awesome"></style>
         <style include="corporate-ui">
             /* shadow DOM styles go here */
             :host {
                 display: block;
             }
+
             .clear-input {
                 cursor: pointer;
             }
+            
             .form-control {
+                padding: 10px 12px;
                 height: 42px;
             }
 
+            .form-control:focus {
+                background-color: #fff;
+            }
+
+            .input-icon {
+                z-index: 10;
+            }
         </style>
         <div class="form-group sc-search">
             <div class="input-group">
@@ -40,11 +51,11 @@ class KsSearch extends PolymerElement {
                 <div class="input-icon">
                     <template is="dom-if" if="[[showClearIcon]]">
                         <span on-click="clearInput" class="clear-input">
-                            <fontawesome-icon prefix="fas" name="times" fixed-width></fontawesome-icon>
+                            <i class="fal fa-times"></i>
                         </span>
                     </template>
                     <template is="dom-if" if="[[!showClearIcon]]">
-                        <fontawesome-icon prefix="fas" name="[[iconClass]]" fixed-width></fontawesome-icon>
+                        <i class="fal fa-filter"></i>
                     </template>
                 </div>
             </div>
