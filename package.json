@@ -10,7 +10,7 @@
     "@polymer/iron-icons": "3.0.0-pre.21",
     "@polymer/polymer": "^3.0.0",
     "@webcomponents/webcomponentsjs": "^2.0.0",
-    "bootstrap": "3.3.5",
+    "bootstrap": "3.4.1",
     "sc-bootstrap-treeview": "1.2.4",
     "fontawesome-icon": "^1.0.4",
     "growl": "^1.10.5",
