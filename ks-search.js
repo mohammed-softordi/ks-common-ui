@@ -82,6 +82,9 @@ class KsSearch extends PolymerElement {
             onClear: {
                 type: Object
             },
+            clear: {
+                type: Object
+            },
             reloadOnClear: {
                 type: String,
                 reflectToAttribute: true
@@ -103,7 +106,7 @@ class KsSearch extends PolymerElement {
         this.$.ksSearch.value = '';
         //this.trigger('input');
         this.set('value', this.$.ksSearch.value);
-        if (typeof this.onClear === 'function') {
+        if (typeof this.onClear === 'function' || typeof this.clear === 'function') {
             this.onClear();
         }
         if (this.reloadOnClear) {
